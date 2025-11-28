@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "../globals.css";
 import { locales, Locale } from "@/lib/i18n";
 import { SiteLayout } from "@/components/SiteLayout";
+import { Analytics } from "@vercel/analytics/react";
 
 const BASE_URL = 'https://open-knm.vercel.app'; // Replace with your actual domain
 
@@ -49,6 +50,7 @@ export default async function RootLayout({
         <SiteLayout locale={validLocale}>
           {children}
         </SiteLayout>
+        <Analytics />
       </body>
     </html>
   );
