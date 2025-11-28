@@ -99,6 +99,41 @@ export default async function KnmPage({
         </p>
       </div>
 
+      <div className="rounded-2xl border border-blue-100 bg-blue-50/50 p-5 space-y-3 text-sm text-slate-800">
+        <p className="font-semibold text-slate-900">
+          {isZh ? "什么是 KNM？" : "What is KNM?"}
+        </p>
+        <p>
+          {isZh
+            ? "KNM（Kennis van de Nederlandse Maatschappij）是荷兰社会知识考试的一部分，考察工作、健康、法律与政治等方面的常识与制度。"
+            : "Kennis van de Nederlandse Maatschappij (KNM) is the civic integration exam’s knowledge component, covering society, work, health, law, and politics."}
+        </p>
+        <p>
+          {isZh
+            ? "考试包含选择题和短答题，题干通常以日常生活情境出现，考察你理解荷兰制度与公共服务的能力。"
+            : "The exam mixes multiple-choice and short-open questions framed around everyday civic scenarios so you demonstrate understanding of Dutch institutions and services."}
+        </p>
+        <p>
+          {isZh
+            ? "常见主题包括就业与劳工、住房与保险、民主制度、历史地理、医疗与教育。"
+            : "Topics include employment and labor, housing and insurance, democratic institutions, history and geography, plus healthcare and education."}
+        </p>
+        <p className="text-xs text-slate-600">
+          {isZh
+            ? "了解官方大纲可以帮助你更有针对性地准备 KNM 考试。"
+            : "Reviewing the official syllabus helps focus your KNM preparation."}
+        </p>
+        <Link
+          href="https://www.inburgeren.nl"
+          className="inline-flex items-center gap-1 text-[var(--primary)] font-semibold"
+          target="_blank"
+          rel="noreferrer"
+        >
+          {isZh ? "访问官方页面了解更多" : "Visit the official site for details"}
+          <span aria-hidden="true">↗</span>
+        </Link>
+      </div>
+
       <ArticleList articles={filteredArticles} locale={locale} />
     </div>
   );
