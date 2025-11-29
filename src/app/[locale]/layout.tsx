@@ -98,6 +98,11 @@ export async function generateMetadata({
       title: localeMeta.title,
       description: localeMeta.description,
     },
+    icons: {
+      icon: "/logo-open-knm.svg",
+      shortcut: "/logo-open-knm.svg",
+      apple: "/logo-open-knm.svg",
+    },
   };
 }
 
