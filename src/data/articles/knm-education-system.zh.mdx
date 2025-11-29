@@ -1,124 +1,134 @@
-<div className="space-y-8">
-  <div className="text-sm text-slate-500 bg-slate-50 border border-slate-100 rounded-xl px-4 py-3 space-y-1">
-    <p className="font-medium">
-      本篇梳理荷兰从 <strong>小学（basisschool）</strong> 到中学
-      <strong>（vmbo / havo / vwo）</strong> 再到 <strong>MBO / HBO / universiteit</strong>
-      的教育分流，帮助你理解常见缩写。
+import { ArticleSummary, BilingualGrid, DutchColumn, ChineseColumn, SourceLink } from '@/components/content/ArticleComponents';
+
+<ArticleSummary icon="🏫">
+  本篇梳理荷兰从 **小学（basisschool）** 到中学 **（vmbo / havo / vwo）** 再到高等教育的完整分流路径。
+</ArticleSummary>
+
+<BilingualGrid>
+  {/* Section 1 */}
+  <DutchColumn title="1. Leerplicht en Basisschool">
+    <p>
+      Kinderen gaan meestal met 4 jaar naar de **basisschool** (Groep 1 t/m 8). De **leerplicht** begint op 5-jarige leeftijd en duurt tot 16 jaar.
     </p>
-  </div>
+    <p>
+      Kinderen van 16 en 17 jaar moeten naar school als ze nog geen diploma hebben.
+    </p>
+    <p>
+      De basisschool is gratis, maar ouders betalen vaak een vrijwillige **ouderbijdrage** voor activiteiten.
+    </p>
+    <p>
+      In Groep 8 van de basisschool doen veel kinderen de **Cito-toets**. De leraar geeft dan een **advies** voor het vervolgonderwijs.
+    </p>
+  </DutchColumn>
 
-  <div className="grid gap-8 md:grid-cols-2">
-    {/* 左列：荷兰语 */}
-    <div className="space-y-4">
-      <h2>Basisschool en leerplicht</h2>
-      <p>
-        In Nederland gaan kinderen meestal vanaf 4 jaar naar de{" "}
-        <strong>basisschool</strong>. De <strong>leerplicht</strong> (verplichte schooltijd)
-        geldt vanaf 5 jaar tot minimaal 16 jaar.
-      </p>
-      <p>
-        Ouders zijn verantwoordelijk om ervoor te zorgen dat hun kinderen naar school gaan.
-        Zonder geldige reden mogen kinderen niet wegblijven.
-      </p>
+  <ChineseColumn title="1. 义务教育与小学">
+    <p>
+      孩子通常在4岁时开始上 **小学 (basisschool)** （从1年级到8年级）。**义务教育 (leerplicht)** 从5岁开始，一直持续到16岁。
+    </p>
+    <p>
+      如果是16岁和17岁的孩子，只要还没拿到文凭，就必须继续上学。
+    </p>
+    <p>
+      小学本身是免费的，但家长通常需要支付一笔自愿的 **家长捐款 (ouderbijdrage)**，用于学校组织的各种活动。
+    </p>
+    <p>
+      在小学的最后一年（8年级），许多孩子会参加 **Cito-toets** 考试。老师会根据情况给出 **升学建议 (advies)**，决定孩子接下来去哪种中学。
+    </p>
+  </ChineseColumn>
 
-      <h2>Voortgezet onderwijs: vmbo, havo, vwo</h2>
-      <p>
-        Na de basisschool gaan kinderen naar het{" "}
-        <strong>voortgezet onderwijs</strong>. Er zijn drie hoofdrichtingen:{" "}
-        <strong>vmbo</strong>, <strong>havo</strong> en <strong>vwo</strong>.
-      </p>
-      <p>
-        <strong>vmbo</strong> is meer praktisch en bereidt voor op <strong>mbo</strong>.{" "}
-        <strong>havo</strong> is meer theoretisch en leidt vaak naar <strong>hbo</strong>.{" "}
-        <strong>vwo</strong> is het meest theoretisch en bereidt voor op de{" "}
-        <strong>universiteit</strong>.
-      </p>
-
-      <h2>Wat moet je onthouden voor KNM?</h2>
-      <ul>
-        <li>
-          Nederland kent <strong>leerplicht</strong> en iedereen moet naar school.
-        </li>
-        <li>
-          De namen <strong>vmbo</strong>, <strong>havo</strong> en <strong>vwo</strong> verwijzen
-          naar <strong>verschillende niveaus</strong>, niet naar meer of minder waarde als
-          persoon.
-        </li>
-      </ul>
-    </div>
-
-    {/* 右列：中文解释 */}
-    <div className="space-y-4">
-      <h2>从小学到中学：分流怎么走？</h2>
-      <p>
-        在荷兰，孩子通常四岁开始上 <strong>小学（basisschool）</strong>。
-        从五岁起到至少十六岁，孩子处于 <strong>义务教育阶段（leerplicht）</strong>，
-        家长有责任确保孩子按时上学，没有正当理由不能随便缺课。
-      </p>
-      <p>
-        小学毕业后会根据老师的建议、考试成绩和家长意见，选择不同的中学路径：
-        <strong>vmbo</strong>、<strong>havo</strong>、<strong>vwo</strong>。
-        这是荷兰教育体系中非常常见的几个缩写。
-      </p>
-
-      <h2>VMBO / HAVO / VWO、MBO / HBO / 大学</h2>
-      <p>
-        <strong>VMBO</strong> 更偏重实践，通常接到{" "}
-        <strong>职业教育（MBO）</strong>；
-        <strong>HAVO</strong> 更偏理论，主要通向{" "}
-        <strong>应用型高校（HBO）</strong>；
-        <strong>VWO</strong> 理论性最强，一般直接衔接{" "}
-        <strong>大学（universiteit）</strong>。
-      </p>
-      <p>
-        这些路径只是 <strong>学习方式和节奏的不同</strong>，并不代表谁“高人一等”或“差一点”。
-        在荷兰社会里，理想的状态是：每个人找到最适合自己的路径。
-      </p>
-
-      <h2>为什么这对 KNM 考试很重要？</h2>
-      <p>
-        在 KNM 考试的听力和阅读中，经常会提到{" "}
-        <strong>basisschool / vmbo / havo / vwo / mbo / hbo / universiteit</strong> 等词。
-        你不需要理解所有细节，但要知道大致是哪个阶段、偏实践还是偏理论。
-      </p>
-    </div>
-  </div>
-
-  <div className="pt-4 border-t border-slate-100 text-sm text-slate-500 space-y-2">
-    <h3 className="font-semibold text-slate-700">延伸阅读 · Wikipedia</h3>
-    <ul className="list-disc list-inside space-y-1">
+  {/* Section 2 */}
+  <DutchColumn title="2. Voortgezet Onderwijs (Middelbare School)">
+    <p>
+      Na de basisschool gaan kinderen naar het **voortgezet onderwijs**. Er zijn drie richtingen: **VMBO**, **HAVO**, en **VWO**.
+    </p>
+    <ul>
       <li>
-        <a
-          href="https://en.wikipedia.org/wiki/Education_in_the_Netherlands"
-          target="_blank"
-          rel="noreferrer"
-          className="text-blue-600 hover:underline"
-        >
-          Education in the Netherlands – Wikipedia
-        </a>
+        **VMBO** duurt 4 jaar. Dit is de meest **praktisch**e (beroeps) richting.
       </li>
       <li>
-        <a
-          href="https://en.wikipedia.org/wiki/Secondary_education_in_the_Netherlands"
-          target="_blank"
-          rel="noreferrer"
-          className="text-blue-600 hover:underline"
-        >
-          Secondary education in the Netherlands – Wikipedia
-        </a>
+        **HAVO** duurt 5 jaar.
       </li>
       <li>
-        <a
-          href="https://en.wikipedia.org/wiki/Universities_of_applied_sciences_in_the_Netherlands"
-          target="_blank"
-          rel="noreferrer"
-          className="text-blue-600 hover:underline"
-        >
-          Universities of applied sciences in the Netherlands – Wikipedia
-        </a>
+        **VWO** duurt 6 jaar. Dit is de meest **theoretisch**e richting.
       </li>
     </ul>
-  </div>
+  </DutchColumn>
+
+  <ChineseColumn title="2. 中学教育 (Voortgezet Onderwijs)">
+    <p>
+      小学毕业后，孩子们进入 **中学 (voortgezet onderwijs)**。这里有三个主要方向：**VMBO**、**HAVO** 和 **VWO**。
+    </p>
+    <ul>
+      <li>
+        **VMBO** 学制4年。这是最偏向 **实践 (praktisch)** 的职业方向。
+      </li>
+      <li>
+        **HAVO** 学制5年。
+      </li>
+      <li>
+        **VWO** 学制6年。这是最偏向 **理论 (theoretisch)** 的学术方向。
+      </li>
+    </ul>
+  </ChineseColumn>
+
+  {/* Section 3 */}
+  <DutchColumn title="3. Vervolgstudies en Kosten">
+    <p>
+      Na het **VMBO** gaat men vaak naar het **MBO** (*Middelbaar Beroepsonderwijs*).
+    </p>
+    <p>
+      Na de **HAVO** kan men naar het **HBO** (*Hoger Beroeps Onderwijs*).
+    </p>
+    <p>
+      Na het **VWO** kan men naar de universiteit (WO) of het **HBO**.
+    </p>
+    <p>
+      Vanaf 18 jaar moeten studenten **lesgeld** betalen. Studenten kunnen bij **DUO** (*Dienst Uitvoering Onderwijs*) **studiefinanciering** aanvragen.
+    </p>
+    <p>
+      Met **studiefinanciering** krijgen zij ook een **OV-studentenkaart** om gratis met het openbaar vervoer te reizen.
+    </p>
+    <p>
+      Ouders met lage inkomens kunnen de **tegemoetkoming ouders** (subsidie voor schoolkosten) aanvragen bij **DUO**.
+    </p>
+  </DutchColumn>
+
+  <ChineseColumn title="3. 后续教育与费用">
+    <p>
+      读完 **VMBO** 后，通常会去读 **MBO**（中等职业教育）。
+    </p>
+    <p>
+      读完 **HAVO** 后，可以去读 **HBO**（高等职业教育/应用科学大学）。
+    </p>
+    <p>
+      读完 **VWO** 后，可以去读 **大学**（WO/研究型大学）或者 **HBO**。
+    </p>
+    <p>
+      从18岁开始，学生必须支付 **学费 (lesgeld)**。学生可以向 **DUO**（教育执行机构）申请 **学习资助 (studiefinanciering)**。
+    </p>
+    <p>
+      获得学习资助的学生还会拿到一张 **OV-studentenkaart**（学生交通卡），可以免费乘坐公共交通。
+    </p>
+    <p>
+      低收入家庭的父母还可以向 **DUO** 申请 **家长补贴 (tegemoetkoming ouders)** 来支付学校相关费用。
+    </p>
+  </ChineseColumn>
+</BilingualGrid>
+
+<div className="mt-12 pt-8 border-t border-slate-100">
+  <h3 className="font-bold text-slate-900 mb-4 flex items-center gap-2">
+    <span className="text-xl">🔗</span> 延伸阅读 · 官方来源
+  </h3>
+  <ul className="space-y-3 list-none pl-0">
+    <li>
+      <SourceLink href="https://www.rijksoverheid.nl/onderwerpen/leerplicht">
+        Rijksoverheid: Leerplicht (义务教育政策)
+      </SourceLink>
+    </li>
+    <li>
+      <SourceLink href="https://duo.nl/">
+        DUO: Studiefinanciering (学生资助)
+      </SourceLink>
+    </li>
+  </ul>
 </div>
-
-

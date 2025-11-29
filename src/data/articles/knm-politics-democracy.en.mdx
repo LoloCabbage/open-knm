@@ -1,133 +1,100 @@
-<div className="space-y-8">
-  <div className="text-sm text-slate-500 bg-slate-50 border border-slate-100 rounded-xl px-4 py-3 space-y-1">
-    <p className="font-medium">
-      This article explains Dutch <strong>parliamentary democracy (parlementaire democratie)</strong> and the{" "}
-      <strong>constitutional monarchy (constitutionele monarchie)</strong>, and how the Tweede Kamer, the King and the Prime Minister work together.
+import { ArticleSummary, BilingualGrid, DutchColumn, EnglishColumn, SourceLink } from '@/components/content/ArticleComponents';
+
+<ArticleSummary icon="🏛️">
+  This article explains the Dutch political system: **parliamentary democracy**, **elections**, and how a **coalition government** works.
+</ArticleSummary>
+
+<BilingualGrid>
+  {/* Section 1 */}
+  <DutchColumn title="1. Het Politieke Systeem">
+    <p>
+      Nederland is een **constitutionele monarchie** en een **parlementaire democratie**.
     </p>
-  </div>
+    <p>
+      De belangrijkste wet van het land is de **Grondwet**.
+    </p>
+    <p>
+      De **Koning** (Willem-Alexander) heeft weinig macht, want het **parlement** maakt de wetten.
+    </p>
+  </DutchColumn>
 
-  <div className="grid gap-8 md:grid-cols-2">
-    {/* Left: Dutch */}
-    <div className="space-y-4">
-      <h2>Parlementaire democratie en monarchie</h2>
-      <p>
-        Nederland is een <strong>parlementaire democratie</strong> en een{" "}
-        <strong>constitutionele monarchie</strong>. Dat betekent dat burgers via verkiezingen
-        vertegenwoordigers kiezen en dat er een koning(in) is met een beperkte rol.
-      </p>
-      <p>
-        Het <strong>parlement</strong> bestaat uit twee Kamers: de{" "}
-        <strong>Tweede Kamer</strong> en de <strong>Eerste Kamer</strong>. De Tweede Kamer wordt
-        direct door de bevolking gekozen en heeft de meeste macht.
-      </p>
+  <EnglishColumn title="1. The Political System">
+    <p>
+      The Netherlands is a **constitutional monarchy (constitutionele monarchie)** and a **parliamentary democracy (parlementaire democratie)**.
+    </p>
+    <p>
+      The most important law of the land is the **Constitution (Grondwet)**.
+    </p>
+    <p>
+      The **King** (Willem-Alexander) has little power, because the **parliament** makes the laws.
+    </p>
+  </EnglishColumn>
 
-      <h2>Regering en kabinet</h2>
-      <p>
-        De <strong>regering</strong> bestaat uit de <strong>Koning</strong> en de{" "}
-        <strong>ministers</strong>. Het <strong>kabinet</strong> is de groep van ministers en
-        staatssecretarissen die dagelijks het land besturen.
-      </p>
-      <p>
-        De leider van het kabinet is de <strong>minister-president</strong> (premier). Hij of
-        zij werkt samen met andere ministers en moet steeds verantwoording afleggen aan de{" "}
-        <strong>Tweede Kamer</strong>.
-      </p>
+  {/* Section 2 */}
+  <DutchColumn title="2. Stemmen en het Parlement">
+    <p>
+      Iedereen die 18 jaar of ouder is en een **Nederlands paspoort** heeft, mag stemmen. Dit heet **actief kiesrecht**.
+    </p>
+    <p>
+      We stemmen om de 150 leden van de **Tweede Kamer** te kiezen. Dit gebeurt meestal elke vier jaar.
+    </p>
+  </DutchColumn>
 
-      <h2>Wat moet je onthouden voor KNM?</h2>
-      <ul>
-        <li>
-          Nederland is een <strong>parlementaire democratie</strong> en een{" "}
-          <strong>constitutionele monarchie</strong>.
-        </li>
-        <li>
-          De <strong>Tweede Kamer</strong> vertegenwoordigt de bevolking en controleert de
-          regering.
-        </li>
-        <li>
-          De <strong>minister-president</strong> is de politieke leider van het land, niet de
-          koning.
-        </li>
-      </ul>
-    </div>
+  <EnglishColumn title="2. Voting and Parliament">
+    <p>
+      Everyone who is 18 years or older and holds a **Dutch passport** is allowed to vote. This is called **the right to vote (actief kiesrecht)**.
+    </p>
+    <p>
+      We vote to elect the 150 members of the **House of Representatives (Tweede Kamer)**. This usually happens every four years.
+    </p>
+  </EnglishColumn>
 
-    {/* Right: English explanation */}
-    <div className="space-y-4">
-      <h2>What kind of democracy does the Netherlands have?</h2>
-      <p>
-        The Netherlands is a <strong>parliamentary democracy (parlementaire democratie)</strong> and a{" "}
-        <strong>constitutional monarchy (constitutionele monarchie)</strong>. Citizens elect representatives and there is a King or Queen whose powers are limited by the Constitution.
-      </p>
-      <p>
-        The <strong>parliament (parlement)</strong> has two chambers: the{" "}
-        <strong>House of Representatives (Tweede Kamer)</strong> and the{" "}
-        <strong>Senate (Eerste Kamer)</strong>. The Tweede Kamer is directly elected and has the main powers to make laws and control the government.
-      </p>
+  {/* Section 3 */}
+  <DutchColumn title="3. Regering en Coalitie">
+    <p>
+      De **regering** bestaat uit de **Koning** en de **Ministers**.
+    </p>
+    <p>
+      De **Minister-President** is de leider van de **Ministers**.
+    </p>
+    <p>
+      Meestal krijgt geen enkele politieke partij de meerderheid van de stemmen. Daarom moeten verschillende partijen samenwerken.
+    </p>
+    <p>
+      Zij vormen dan een **coalitie**. Partijen die niet in de **coalitie** zitten, zijn de **oppositie**.
+    </p>
+  </DutchColumn>
 
-      <h2>The King, the government and the Prime Minister</h2>
-      <p>
-        The <strong>government (regering)</strong> is made up of the{" "}
-        <strong>King (Koning)</strong> and the <strong>ministers (ministers)</strong>. Day‑to‑day policy is carried out by the{" "}
-        <strong>cabinet (kabinet)</strong>, which includes all ministers and state secretaries.
-      </p>
-      <p>
-        The head of the cabinet is the <strong>Prime Minister (minister-president)</strong>, not the King. The cabinet is accountable to the{" "}
-        <strong>Tweede Kamer</strong>; if it loses the confidence of parliament, it may have to resign.
-      </p>
+  <EnglishColumn title="3. Government and Coalition">
+    <p>
+      The **government (regering)** consists of the **King** and the **Ministers**.
+    </p>
+    <p>
+      The **Prime Minister (Minister-President)** is the leader of the **Ministers**.
+    </p>
+    <p>
+      Usually, no single political party gets a majority of the votes. That is why different parties must work together.
+    </p>
+    <p>
+      They form a **coalition (coalitie)**. Parties that are not in the **coalition** are called the **opposition (oppositie)**.
+    </p>
+  </EnglishColumn>
+</BilingualGrid>
 
-      <h2>Why is this important for KNM?</h2>
-      <p>
-        In the KNM exam you should roughly understand the roles of the{" "}
-        <strong>Tweede Kamer</strong>, the <strong>minister-president</strong> and the{" "}
-        <strong>koning</strong>, and not assume that the King has all the power.
-      </p>
-    </div>
-  </div>
-
-  <div className="pt-4 border-t border-slate-100 text-sm text-slate-500 space-y-2">
-    <h3 className="font-semibold text-slate-700">Further reading on Wikipedia</h3>
-    <ul className="list-disc list-inside space-y-1">
-      <li>
-        <a
-          href="https://en.wikipedia.org/wiki/Politics_of_the_Netherlands"
-          target="_blank"
-          rel="noreferrer"
-          className="text-blue-600 hover:underline"
-        >
-          Politics of the Netherlands – Wikipedia
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://en.wikipedia.org/wiki/States_General_of_the_Netherlands"
-          target="_blank"
-          rel="noreferrer"
-          className="text-blue-600 hover:underline"
-        >
-          States General of the Netherlands – Wikipedia
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://en.wikipedia.org/wiki/House_of_Representatives_(Netherlands)"
-          target="_blank"
-          rel="noreferrer"
-          className="text-blue-600 hover:underline"
-        >
-          House of Representatives (Netherlands) – Wikipedia
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://en.wikipedia.org/wiki/Constitutional_monarchy"
-          target="_blank"
-          rel="noreferrer"
-          className="text-blue-600 hover:underline"
-        >
-          Constitutional monarchy – Wikipedia
-        </a>
-      </li>
-    </ul>
-  </div>
+<div className="mt-12 pt-8 border-t border-slate-100">
+  <h3 className="font-bold text-slate-900 mb-4 flex items-center gap-2">
+    <span className="text-xl">🔗</span> Further Reading
+  </h3>
+  <ul className="space-y-3 list-none pl-0">
+    <li>
+      <SourceLink href="https://en.wikipedia.org/wiki/Politics_of_the_Netherlands">
+        Politics of the Netherlands – Wikipedia
+      </SourceLink>
+    </li>
+    <li>
+      <SourceLink href="https://www.government.nl/topics/democracy">
+        Government.nl: Democracy
+      </SourceLink>
+    </li>
+  </ul>
 </div>
-
-

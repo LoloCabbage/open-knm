@@ -1,9 +1,15 @@
-import { Locale } from "@/lib/i18n";
+import { Locale, isLocale } from "@/lib/uiTexts";
 import { getArticlesByCategory } from "@/lib/articles";
 import { ArticleList } from "@/components/ArticleList";
+import { notFound } from "next/navigation";
 
 export default async function SocietyPage({ params }: { params: Promise<{ locale: Locale }> }) {
   const { locale } = await params;
+
+  if (!isLocale(locale)) {
+    notFound();
+  }
+
   const isZh = locale === "zh";
   const articles = getArticlesByCategory("society");
 

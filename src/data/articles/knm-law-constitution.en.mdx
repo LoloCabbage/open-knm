@@ -1,132 +1,88 @@
-<div className="space-y-8">
-  <div className="text-sm text-slate-500 bg-slate-50 border border-slate-100 rounded-xl px-4 py-3 space-y-1">
-    <p className="font-medium">
-      This article focuses on <strong>Article 1 of the Dutch Constitution (Artikel 1 van de Grondwet)</strong>,
-      explaining equality and the ban on discrimination in everyday life.
+import { ArticleSummary, BilingualGrid, DutchColumn, EnglishColumn, SourceLink } from '@/components/content/ArticleComponents';
+
+<ArticleSummary icon="⚖️">
+  This article explains the supreme law of the Netherlands—the **Constitution (Grondwet)**—and core rights such as the **ban on discrimination**, **freedom of speech**, and **freedom of religion**.
+</ArticleSummary>
+
+<BilingualGrid>
+  {/* Section 1 */}
+  <DutchColumn title="1. De Grondwet en Artikel 1">
+    <p>
+      De **Grondwet** is de belangrijkste wet van Nederland. Alle andere wetten moeten zich aan de **Grondwet** houden.
     </p>
-  </div>
+    <p>
+      In de **Grondwet** staat dat **discriminatie** verboden is.
+    </p>
+    <p>
+      **Artikel 1** zegt: alle mensen zijn **gelijk** voor de wet. U mag niet discrimineren op basis van geloof, huidskleur, geslacht, of seksuele voorkeur.
+    </p>
+  </DutchColumn>
 
-  <div className="grid gap-8 md:grid-cols-2">
-    {/* Left: Dutch */}
-    <div className="space-y-4">
-      <h2>Artikel 1 van de Grondwet</h2>
-      <p>
-        In <strong>Artikel 1 van de Grondwet</strong> staat dat{" "}
-        <strong>iedereen in gelijke gevallen gelijk wordt behandeld</strong> en dat{" "}
-        <strong>discriminatie verboden</strong> is. Dit is een van de belangrijkste{" "}
-        <strong>grondrechten</strong> in Nederland.
-      </p>
-      <p>
-        Discriminatie mag niet plaatsvinden op basis van bijvoorbeeld afkomst, geslacht,
-        geloof, seksuele geaardheid of handicap. De overheid én burgers moeten zich aan deze
-        regel houden.
-      </p>
+  <EnglishColumn title="1. The Constitution and Article 1">
+    <p>
+      The **Constitution (Grondwet)** is the most important law in the Netherlands. All other laws must comply with the **Constitution**.
+    </p>
+    <p>
+      The **Constitution** states that **discrimination** is forbidden.
+    </p>
+    <p>
+      **Article 1** says: all people are **equal (gelijk)** before the law. You may not discriminate based on religion, skin color, gender, or sexual orientation.
+    </p>
+  </EnglishColumn>
 
-      <h2>Nederland als rechtsstaat</h2>
-      <p>
-        Nederland is een <strong>rechtsstaat</strong>. Dat betekent dat niet personen, maar{" "}
-        <strong>wetten</strong> de basis van het land vormen. De overheid moet zich ook aan de
-        wet houden.
-      </p>
-      <p>
-        Rechters zijn onafhankelijk en kunnen beoordelen of een overheidsbeslissing eerlijk
-        is. Mensen hebben <strong>rechten en plichten</strong> en kunnen naar de rechter
-        stappen als ze denken dat ze ongelijk zijn behandeld.
-      </p>
+  {/* Section 2 */}
+  <DutchColumn title="2. Vrijheid van meningsuiting en godsdienst">
+    <p>
+      U heeft **vrijheid van meningsuiting**. U mag uw mening zeggen, maar u moet altijd respect hebben voor een ander. U mag niemand beledigen of schade toebrengen.
+    </p>
+    <p>
+      Er is ook **vrijheid van godsdienst**. Iedereen mag zijn eigen geloof hebben. Veel Nederlanders hebben geen godsdienst, en dat mag ook.
+    </p>
+  </DutchColumn>
 
-      <h2>Wat moet je onthouden voor KNM?</h2>
-      <ul>
-        <li>
-          <strong>Artikel 1 van de Grondwet</strong> gaat over{" "}
-          <strong>gelijkheid</strong> en <strong>verbod op discriminatie</strong>.
-        </li>
-        <li>
-          Nederland is een <strong>rechtsstaat</strong>: de wet geldt voor iedereen, ook voor de
-          overheid.
-        </li>
-      </ul>
-    </div>
+  <EnglishColumn title="2. Freedom of Speech and Religion">
+    <p>
+      You have **freedom of speech (vrijheid van meningsuiting)**. You may express your opinion, but you must always show respect for others. You may not insult anyone or cause harm (e.g., hate speech).
+    </p>
+    <p>
+      There is also **freedom of religion (vrijheid van godsdienst)**. Everyone is allowed to have their own faith. Many Dutch people have no religion, and that is allowed too.
+    </p>
+  </EnglishColumn>
 
-    {/* Right: English explanation */}
-    <div className="space-y-4">
-      <h2>Article 1: equality and no discrimination</h2>
-      <p>
-        <strong>Article 1 of the Constitution (Artikel 1 van de Grondwet)</strong> says that{" "}
-        <strong>everyone shall be treated equally in equal cases and discrimination is forbidden</strong>.
-        This is one of the most important <strong>fundamental rights (grondrechten)</strong> in the Netherlands.
-      </p>
-      <p>
-        The Constitution forbids <strong>discrimination (discriminatie)</strong> on grounds such as origin,
-        gender, religion, sexual orientation or disability. Not only the government, but also private persons
-        and organisations must respect this rule in work, housing and other areas.
-      </p>
+  {/* Section 3 */}
+  <DutchColumn title="3. Rechten en plichten">
+    <p>
+      Naast rechten heeft u ook plichten. U moet de wetten kennen en u aan de wet houden.
+    </p>
+    <p>
+      Ook moet u **belasting** betalen als u geld verdient. De overheid gebruikt dit geld voor sociale voorzieningen en wegen.
+    </p>
+  </DutchColumn>
 
-      <h2>Rule of law (rechtsstaat)</h2>
-      <p>
-        The Netherlands is a <strong>state under the rule of law (rechtsstaat)</strong>: not people, but{" "}
-        <strong>laws (wetten)</strong> are in charge. The government must also obey the law. If citizens feel
-        they have been treated unfairly, they can go to an{" "}
-        <strong>independent judge (rechter)</strong>.
-      </p>
-      <p>
-        As a resident you have <strong>rights (rechten)</strong> and{" "}
-        <strong>duties (plichten)</strong>. This helps you judge what is and is not allowed in Dutch society.
-      </p>
+  <EnglishColumn title="3. Rights and Duties">
+    <p>
+      Besides rights, you also have duties. You must know the laws and obey them.
+    </p>
+    <p>
+      You must also pay **taxes (belasting)** if you earn money. The government uses this money for social services and roads.
+    </p>
+  </EnglishColumn>
+</BilingualGrid>
 
-      <h2>Why is this important for KNM?</h2>
-      <p>
-        In the KNM exam, when you hear about <strong>Artikel 1</strong> or{" "}
-        <strong>"discriminatie verboden"</strong>, you should know it refers to{" "}
-        <strong>equality for everyone and respect for diversity</strong>.
-      </p>
-    </div>
-  </div>
-
-  <div className="pt-4 border-t border-slate-100 text-sm text-slate-500 space-y-2">
-    <h3 className="font-semibold text-slate-700">Further reading on Wikipedia</h3>
-    <ul className="list-disc list-inside space-y-1">
-      <li>
-        <a
-          href="https://en.wikipedia.org/wiki/Constitution_of_the_Netherlands"
-          target="_blank"
-          rel="noreferrer"
-          className="text-blue-600 hover:underline"
-        >
-          Constitution of the Netherlands – Wikipedia
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://en.wikipedia.org/wiki/Fundamental_right"
-          target="_blank"
-          rel="noreferrer"
-          className="text-blue-600 hover:underline"
-        >
-          Fundamental right – Wikipedia
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://en.wikipedia.org/wiki/Equality_before_the_law"
-          target="_blank"
-          rel="noreferrer"
-          className="text-blue-600 hover:underline"
-        >
-          Equality before the law – Wikipedia
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://en.wikipedia.org/wiki/Rule_of_law"
-          target="_blank"
-          rel="noreferrer"
-          className="text-blue-600 hover:underline"
-        >
-          Rule of law – Wikipedia
-        </a>
-      </li>
-    </ul>
-  </div>
+<div className="mt-12 pt-8 border-t border-slate-100">
+  <h3 className="font-bold text-slate-900 mb-4 flex items-center gap-2">
+    <span className="text-xl">🔗</span> Further Reading
+  </h3>
+  <ul className="space-y-3 list-none pl-0">
+    <li>
+      <SourceLink href="https://en.wikipedia.org/wiki/Constitution_of_the_Netherlands">
+        Constitution of the Netherlands – Wikipedia
+      </SourceLink>
+    </li>
+    <li>
+      <SourceLink href="https://www.government.nl/topics/constitution">
+        Government.nl: The Constitution
+      </SourceLink>
+    </li>
+  </ul>
 </div>
-
-

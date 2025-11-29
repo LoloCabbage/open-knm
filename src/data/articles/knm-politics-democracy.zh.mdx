@@ -1,136 +1,100 @@
-<div className="space-y-8">
-  <div className="text-sm text-slate-500 bg-slate-50 border border-slate-100 rounded-xl px-4 py-3 space-y-1">
-    <p className="font-medium">
-      本篇介绍荷兰的 **议会民主（parlementaire democratie）** 与
-      **君主立宪制（constitutionele monarchie）**，以及 Tweede Kamer、koning 和
-      minister-president 之间的关系。
+import { ArticleSummary, BilingualGrid, DutchColumn, ChineseColumn, SourceLink } from '@/components/content/ArticleComponents';
+
+<ArticleSummary icon="🏛️">
+  本篇介绍荷兰的政治制度：**议会民主制**、**选举** 以及 **联合政府 (coalitie)** 的运作方式。
+</ArticleSummary>
+
+<BilingualGrid>
+  {/* Section 1 */}
+  <DutchColumn title="1. Het Politieke Systeem">
+    <p>
+      Nederland is een **constitutionele monarchie** en een **parlementaire democratie**.
     </p>
-  </div>
+    <p>
+      De belangrijkste wet van het land is de **Grondwet**.
+    </p>
+    <p>
+      De **Koning** (Willem-Alexander) heeft weinig macht, want het **parlement** maakt de wetten.
+    </p>
+  </DutchColumn>
 
-  <div className="grid gap-8 md:grid-cols-2">
-    {/* 左列：荷兰语 */}
-    <div className="space-y-4">
-      <h2>Parlementaire democratie en monarchie</h2>
-      <p>
-        Nederland is een <strong>parlementaire democratie</strong> en een{" "}
-        <strong>constitutionele monarchie</strong>. Dat betekent dat burgers via verkiezingen
-        vertegenwoordigers kiezen en dat er een koning(in) is met een beperkte rol.
-      </p>
-      <p>
-        Het <strong>parlement</strong> bestaat uit twee Kamers: de{" "}
-        <strong>Tweede Kamer</strong> en de <strong>Eerste Kamer</strong>. De Tweede Kamer wordt
-        direct door de bevolking gekozen en heeft de meeste macht.
-      </p>
+  <ChineseColumn title="1. 政治体制">
+    <p>
+      荷兰既是一个 **君主立宪制国家 (constitutionele monarchie)**，也是一个 **议会民主制国家 (parlementaire democratie)**。
+    </p>
+    <p>
+      这个国家最重要的法律是 **宪法 (Grondwet)**。
+    </p>
+    <p>
+      **国王** (Willem-Alexander) 权力很小，因为制定法律的是 **议会 (parlement)**。
+    </p>
+  </ChineseColumn>
 
-      <h2>Regering en kabinet</h2>
-      <p>
-        De <strong>regering</strong> bestaat uit de <strong>Koning</strong> en de{" "}
-        <strong>ministers</strong>. Het <strong>kabinet</strong> is de groep van ministers en
-        staatssecretarissen die dagelijks het land besturen.
-      </p>
-      <p>
-        De leider van het kabinet is de <strong>minister-president</strong> (premier). Hij of
-        zij werkt samen met andere ministers en moet steeds verantwoording afleggen aan de{" "}
-        <strong>Tweede Kamer</strong>.
-      </p>
+  {/* Section 2 */}
+  <DutchColumn title="2. Stemmen en het Parlement">
+    <p>
+      Iedereen die 18 jaar of ouder is en een **Nederlands paspoort** heeft, mag stemmen. Dit heet **actief kiesrecht**.
+    </p>
+    <p>
+      We stemmen om de 150 leden van de **Tweede Kamer** te kiezen. Dit gebeurt meestal elke vier jaar.
+    </p>
+  </DutchColumn>
 
-      <h2>Wat moet je onthouden voor KNM?</h2>
-      <ul>
-        <li>
-          Nederland is een <strong>parlementaire democratie</strong> en een{" "}
-          <strong>constitutionele monarchie</strong>.
-        </li>
-        <li>
-          De <strong>Tweede Kamer</strong> vertegenwoordigt de bevolking en controleert de
-          regering.
-        </li>
-        <li>
-          De <strong>minister-president</strong> is de politieke leider van het land, niet de
-          koning.
-        </li>
-      </ul>
-    </div>
+  <ChineseColumn title="2. 选举与议会">
+    <p>
+      所有年满18岁且持有 **荷兰护照 (Nederlands paspoort)** 的人都可以投票。这被称为 **选举权 (actief kiesrecht)**。
+    </p>
+    <p>
+      我们要投票选出 **二院 (Tweede Kamer)** 的150名成员。（注：相当于众议院，是最重要的立法机构）。选举通常每四年举行一次。
+    </p>
+  </ChineseColumn>
 
-    {/* 右列：中文解释 */}
-    <div className="space-y-4">
-      <h2>荷兰是什么样的民主制度？</h2>
-      <p>
-        荷兰是 <strong>议会民主制（parlementaire democratie）</strong>，同时也是{" "}
-        <strong>君主立宪制（constitutionele monarchie）</strong>。
-        这意味着：普通公民通过选举把权力交给议会代表，国家同时保留国王/女王，但国王的权力受宪法严格限制。
-      </p>
-      <p>
-        荷兰的 <strong>议会（parlement）</strong> 分为两院：{" "}
-        <strong>第二议院（Tweede Kamer）</strong> 和{" "}
-        <strong>第一议院（Eerste Kamer）</strong>。
-        其中第二议院由选民直接选举产生，权力最大，负责立法并监督政府。
-      </p>
+  {/* Section 3 */}
+  <DutchColumn title="3. Regering en Coalitie">
+    <p>
+      De **regering** bestaat uit de **Koning** en de **Ministers**.
+    </p>
+    <p>
+      De **Minister-President** is de leider van de **Ministers**.
+    </p>
+    <p>
+      Meestal krijgt geen enkele politieke partij de meerderheid van de stemmen. Daarom moeten verschillende partijen samenwerken.
+    </p>
+    <p>
+      Zij vormen dan een **coalitie**. Partijen die niet in de **coalitie** zitten, zijn de **oppositie**.
+    </p>
+  </DutchColumn>
 
-      <h2>国王、政府和首相</h2>
-      <p>
-        <strong>政府（regering）</strong> 由{" "}
-        <strong>国王（Koning）</strong> 和 <strong>各部长（ministers）</strong> 组成。
-        日常负责国家治理的是 <strong>内阁（kabinet）</strong>，包括所有部长和国务秘书。
-      </p>
-      <p>
-        领导内阁的是 <strong>首相/总理（minister-president）</strong>，而不是国王。内阁必须向{" "}
-        <strong>第二议院（Tweede Kamer）</strong> 负责，如果议会不再信任内阁，内阁就可能下台。
-      </p>
+  <ChineseColumn title="3. 政府与联盟">
+    <p>
+      **政府 (regering)** 由 **国王** 和 **大臣们 (Ministers)** 组成。
+    </p>
+    <p>
+      **首相 (Minister-President)** 是大臣们的领袖。
+    </p>
+    <p>
+      通常没有任何一个政党能获得过半数的选票。因此，不同的政党必须合作。
+    </p>
+    <p>
+      这些合作的政党组成一个 **执政联盟 (coalitie)**。而那些没有加入联盟的政党则被称为 **反对党 (oppositie)**。
+    </p>
+  </ChineseColumn>
+</BilingualGrid>
 
-      <h2>为什么这对 KNM 考试很重要？</h2>
-      <p>
-        在 KNM 考试中，当你听到 <strong>Tweede Kamer</strong>、
-        <strong>minister-president</strong> 或 <strong>koning</strong> 时，
-        要能大致理解他们在荷兰政治中的角色，而不要把“国王”误以为是拥有全部权力的人。
-      </p>
-    </div>
-  </div>
-
-  <div className="pt-4 border-t border-slate-100 text-sm text-slate-500 space-y-2">
-    <h3 className="font-semibold text-slate-700">延伸阅读 · Wikipedia</h3>
-    <ul className="list-disc list-inside space-y-1">
-      <li>
-        <a
-          href="https://en.wikipedia.org/wiki/Politics_of_the_Netherlands"
-          target="_blank"
-          rel="noreferrer"
-          className="text-blue-600 hover:underline"
-        >
-          Politics of the Netherlands – Wikipedia
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://en.wikipedia.org/wiki/States_General_of_the_Netherlands"
-          target="_blank"
-          rel="noreferrer"
-          className="text-blue-600 hover:underline"
-        >
-          States General of the Netherlands – Wikipedia
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://en.wikipedia.org/wiki/House_of_Representatives_(Netherlands)"
-          target="_blank"
-          rel="noreferrer"
-          className="text-blue-600 hover:underline"
-        >
-          House of Representatives (Netherlands) – Wikipedia
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://en.wikipedia.org/wiki/Constitutional_monarchy"
-          target="_blank"
-          rel="noreferrer"
-          className="text-blue-600 hover:underline"
-        >
-          Constitutional monarchy – Wikipedia
-        </a>
-      </li>
-    </ul>
-  </div>
+<div className="mt-12 pt-8 border-t border-slate-100">
+  <h3 className="font-bold text-slate-900 mb-4 flex items-center gap-2">
+    <span className="text-xl">🔗</span> 延伸阅读 · 官方来源
+  </h3>
+  <ul className="space-y-3 list-none pl-0">
+    <li>
+      <SourceLink href="https://www.rijksoverheid.nl/onderwerpen/democratie">
+        Rijksoverheid: Hoe werkt de democratie? (民主如何运作)
+      </SourceLink>
+    </li>
+    <li>
+      <SourceLink href="https://www.tweedekamer.nl/zo_werkt_de_kamer">
+        Tweede Kamer: Zo werkt de Kamer (二院如何运作)
+      </SourceLink>
+    </li>
+  </ul>
 </div>
-
-

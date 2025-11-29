@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Locale } from "@/lib/uiTexts";
+import { Locale, isLocale } from "@/lib/uiTexts";
 import { getArticleBySlug } from "@/lib/articles";
 import { notFound } from "next/navigation";
 import Link from "next/link";
@@ -87,6 +87,11 @@ const articleBodies: Record<string, Partial<Record<Locale, ComponentType>>> = {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale, slug } = await params;
+
+  if (!isLocale(locale)) {
+    return { title: 'Not Found' };
+  }
+
   const article = getArticleBySlug(slug);
 
   if (!article) {
@@ -126,6 +131,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function ArticlePage({ params }: Props) {
   const { locale, slug } = await params;
+  
+  if (!isLocale(locale)) {
+    notFound();
+  }
+
   const article = getArticleBySlug(slug);
 
   if (!article) {
@@ -195,5 +205,3 @@ export default async function ArticlePage({ params }: Props) {
     </article>
   );
 }
-
-

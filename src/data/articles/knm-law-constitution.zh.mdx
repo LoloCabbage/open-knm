@@ -1,135 +1,88 @@
-<div className="space-y-8">
-  <div className="text-sm text-slate-500 bg-slate-50 border border-slate-100 rounded-xl px-4 py-3 space-y-1">
-    <p className="font-medium">
-      本篇聚焦荷兰宪法第一条 <strong>Artikel 1 van de Grondwet</strong>，解释“人人平等”和
-      “禁止歧视（discriminatie verboden）”在日常生活中的含义。
+import { ArticleSummary, BilingualGrid, DutchColumn, ChineseColumn, SourceLink } from '@/components/content/ArticleComponents';
+
+<ArticleSummary icon="⚖️">
+  本篇介绍荷兰的最高法律——**宪法 (Grondwet)**，以及其中规定的 **禁止歧视**、**言论自由** 和 **宗教自由** 等核心权利。
+</ArticleSummary>
+
+<BilingualGrid>
+  {/* Section 1 */}
+  <DutchColumn title="1. De Grondwet en Artikel 1">
+    <p>
+      De **Grondwet** is de belangrijkste wet van Nederland. Alle andere wetten moeten zich aan de **Grondwet** houden.
     </p>
-  </div>
+    <p>
+      In de **Grondwet** staat dat **discriminatie** verboden is.
+    </p>
+    <p>
+      **Artikel 1** zegt: alle mensen zijn **gelijk** voor de wet. U mag niet discrimineren op basis van geloof, huidskleur, geslacht, of seksuele voorkeur.
+    </p>
+  </DutchColumn>
 
-  <div className="grid gap-8 md:grid-cols-2">
-    {/* 左列：荷兰语 */}
-    <div className="space-y-4">
-      <h2>Artikel 1 van de Grondwet</h2>
-      <p>
-        In <strong>Artikel 1 van de Grondwet</strong> staat dat{" "}
-        <strong>iedereen in gelijke gevallen gelijk wordt behandeld</strong> en dat{" "}
-        <strong>discriminatie verboden</strong> is. Dit is een van de belangrijkste{" "}
-        <strong>grondrechten</strong> in Nederland.
-      </p>
-      <p>
-        Discriminatie mag niet plaatsvinden op basis van bijvoorbeeld afkomst, geslacht,
-        geloof, seksuele geaardheid of handicap. De overheid én burgers moeten zich aan deze
-        regel houden.
-      </p>
+  <ChineseColumn title="1. 宪法与第一条">
+    <p>
+      **宪法 (Grondwet)** 是荷兰最重要的法律。所有其他的法律都必须遵守宪法的规定。
+    </p>
+    <p>
+      宪法明确规定：**歧视 (discriminatie)** 是被禁止的。
+    </p>
+    <p>
+      **宪法第一条 (Artikel 1)** 规定：所有人在法律面前都是 **平等 (gelijk)** 的。您不得因信仰、肤色、性别或性取向而歧视他人。
+    </p>
+  </ChineseColumn>
 
-      <h2>Nederland als rechtsstaat</h2>
-      <p>
-        Nederland is een <strong>rechtsstaat</strong>. Dat betekent dat niet personen, maar{" "}
-        <strong>wetten</strong> de basis van het land vormen. De overheid moet zich ook aan de
-        wet houden.
-      </p>
-      <p>
-        Rechters zijn onafhankelijk en kunnen beoordelen of een overheidsbeslissing eerlijk
-        is. Mensen hebben <strong>rechten en plichten</strong> en kunnen naar de rechter
-        stappen als ze denken dat ze ongelijk zijn behandeld.
-      </p>
+  {/* Section 2 */}
+  <DutchColumn title="2. Vrijheid van meningsuiting en godsdienst">
+    <p>
+      U heeft **vrijheid van meningsuiting**. U mag uw mening zeggen, maar u moet altijd respect hebben voor een ander. U mag niemand beledigen of schade toebrengen.
+    </p>
+    <p>
+      Er is ook **vrijheid van godsdienst**. Iedereen mag zijn eigen geloof hebben. Veel Nederlanders hebben geen godsdienst, en dat mag ook.
+    </p>
+  </DutchColumn>
 
-      <h2>Wat moet je onthouden voor KNM?</h2>
-      <ul>
-        <li>
-          <strong>Artikel 1 van de Grondwet</strong> gaat over{" "}
-          <strong>gelijkheid</strong> en <strong>verbod op discriminatie</strong>.
-        </li>
-        <li>
-          Nederland is een <strong>rechtsstaat</strong>: de wet geldt voor iedereen, ook voor de
-          overheid.
-        </li>
-      </ul>
-    </div>
+  <ChineseColumn title="2. 言论自由与宗教自由">
+    <p>
+      您拥有 **言论自由 (vrijheid van meningsuiting)**。您可以表达您的观点，但必须始终尊重他人。您不能侮辱他人或造成伤害（例如煽动仇恨）。
+    </p>
+    <p>
+      此外还有 **宗教自由 (vrijheid van godsdienst)**。每个人都可以拥有自己的信仰。许多荷兰人不信教，这也是被允许的。
+    </p>
+  </ChineseColumn>
 
-    {/* 右列：中文解释 */}
-    <div className="space-y-4">
-      <h2>宪法第一条：人人平等，禁止歧视</h2>
-      <p>
-        荷兰宪法 <strong>第一条（Artikel 1 van de Grondwet）</strong> 规定：
-        <strong>
-          “在相同情况下，每个人都应被平等对待，任何歧视（discriminatie）都是被禁止的。”
-        </strong>
-        这是荷兰最重要的 <strong>基本权利（grondrechten）</strong> 之一。
-      </p>
-      <p>
-        宪法明确禁止基于 <strong>出身、性别、宗教、性取向、残障等</strong> 任何形式的{" "}
-        <strong>歧视（discriminatie）</strong>。不仅政府要遵守这条原则，普通个人和机构在工作、
-        住房等方面也必须遵守。
-      </p>
+  {/* Section 3 */}
+  <DutchColumn title="3. Rechten en plichten">
+    <p>
+      Naast rechten heeft u ook plichten. U moet de wetten kennen en u aan de wet houden.
+    </p>
+    <p>
+      Ook moet u **belasting** betalen als u geld verdient. De overheid gebruikt dit geld voor sociale voorzieningen en wegen.
+    </p>
+  </DutchColumn>
 
-      <h2>法治国家（rechtsstaat）</h2>
-      <p>
-        荷兰是一个 <strong>法治国家（rechtsstaat）</strong>：不是某个人说了算，而是{" "}
-        <strong>法律（wetten）</strong> 说了算。政府的行为也必须符合法律，如果公民认为自己被不公正对待，
-        可以向 <strong>法官（rechter）</strong> 提出申诉。
-      </p>
-      <p>
-        作为居民，你既有 <strong>权利（rechten）</strong>，也有{" "}
-        <strong>义务（plichten）</strong>。理解这点有助于在 KNM 考试中正确判断“什么是允许的，
-        什么是不允许的”。
-      </p>
+  <ChineseColumn title="3. 权利与义务">
+    <p>
+      除了权利，您也有义务。您必须了解法律并遵守法律。
+    </p>
+    <p>
+      如果您有收入，您还必须缴纳 **税款 (belasting)**。政府利用这些资金来提供社会福利和修建道路等。
+    </p>
+  </ChineseColumn>
+</BilingualGrid>
 
-      <h2>为什么这对 KNM 考试很重要？</h2>
-      <p>
-        在 KNM 题目里，如果听到 <strong>Artikel 1</strong>、{" "}
-        <strong>discriminatie verboden</strong> 或者关于不同背景人群是否被公平对待的问题，
-        你要立刻联想到：这是在考察 <strong>人人平等</strong> 和{" "}
-        <strong>禁止歧视</strong> 的原则。
-      </p>
-    </div>
-  </div>
-
-  <div className="pt-4 border-t border-slate-100 text-sm text-slate-500 space-y-2">
-    <h3 className="font-semibold text-slate-700">延伸阅读 · Wikipedia</h3>
-    <ul className="list-disc list-inside space-y-1">
-      <li>
-        <a
-          href="https://en.wikipedia.org/wiki/Constitution_of_the_Netherlands"
-          target="_blank"
-          rel="noreferrer"
-          className="text-blue-600 hover:underline"
-        >
-          Constitution of the Netherlands – Wikipedia
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://en.wikipedia.org/wiki/Fundamental_right"
-          target="_blank"
-          rel="noreferrer"
-          className="text-blue-600 hover:underline"
-        >
-          Fundamental right – Wikipedia
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://en.wikipedia.org/wiki/Equality_before_the_law"
-          target="_blank"
-          rel="noreferrer"
-          className="text-blue-600 hover:underline"
-        >
-          Equality before the law – Wikipedia
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://en.wikipedia.org/wiki/Rule_of_law"
-          target="_blank"
-          rel="noreferrer"
-          className="text-blue-600 hover:underline"
-        >
-          Rule of law – Wikipedia
-        </a>
-      </li>
-    </ul>
-  </div>
+<div className="mt-12 pt-8 border-t border-slate-100">
+  <h3 className="font-bold text-slate-900 mb-4 flex items-center gap-2">
+    <span className="text-xl">🔗</span> 延伸阅读 · 官方来源
+  </h3>
+  <ul className="space-y-3 list-none pl-0">
+    <li>
+      <SourceLink href="https://www.denederlandsegrondwet.nl/">
+        De Nederlandse Grondwet (荷兰宪法全文)
+      </SourceLink>
+    </li>
+    <li>
+      <SourceLink href="https://www.rijksoverheid.nl/onderwerpen/grondwet-en-statuut/grondwet">
+        Rijksoverheid: Wat staat er in de Grondwet? (政府官网解释)
+      </SourceLink>
+    </li>
+  </ul>
 </div>
-
-

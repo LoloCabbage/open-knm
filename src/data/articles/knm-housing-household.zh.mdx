@@ -1,78 +1,128 @@
-<div className="space-y-8">
-  <div className="text-sm text-slate-500 bg-slate-50 border border-slate-100 rounded-xl px-4 py-3 space-y-1">
-    <p className="font-medium">
-      本篇介绍荷兰的住房相关知识：<strong>租房与买房（huren/kopen）</strong>，以及必须缴纳的<strong>税费（belastingen）</strong>和<strong>保险（verzekeringen）</strong>。
+import { ArticleSummary, BilingualGrid, DutchColumn, ChineseColumn, SourceLink } from '@/components/content/ArticleComponents';
+
+<ArticleSummary icon="🏠">
+  本篇介绍在荷兰生活的居住常识：**租房与买房 (Huren en Kopen)**、**邻里关系 (Buren)** 以及严格的 **垃圾分类 (Afval scheiden)**。
+</ArticleSummary>
+
+<BilingualGrid>
+  {/* Section 1 */}
+  <DutchColumn title="1. Huren of Kopen">
+    <p>
+      Een huis huren kan via een woningcorporatie (**woningbouwvereniging**). Dit zijn vaak **sociale huurwoningen** met een lage huur.
     </p>
-  </div>
+    <p>
+      U kunt ook een huis huren in de **vrije sector**, maar de huur is dan vaak hoog.
+    </p>
+    <p>
+      Om een huis te kopen, vragen veel mensen een **hypotheek** aan bij een bank of verzekeringsmaatschappij.
+    </p>
+  </DutchColumn>
 
-  <div className="grid gap-8 md:grid-cols-2">
-    <div className="space-y-4">
-      <h2>Huren en kopen</h2>
-      <p>
-        Je kunt in Nederland een woning huren of kopen. <strong>Sociale huurwoningen</strong> zijn goedkoper, maar er is vaak een lange <strong>wachttijd</strong>. Particuliere huur is duurder, maar sneller beschikbaar.
-      </p>
-      <p>
-        Als je een huis koopt, leen je meestal geld bij de bank. Dit heet een <strong>hypotheek</strong>. Je moet naar de <strong>notaris</strong> om het koopcontract officieel te maken.
-      </p>
+  <ChineseColumn title="1. 租房与买房">
+    <p>
+      您可以通过住房协会 (**woningbouwvereniging**) 租房。这些通常是租金较低的 **社会住房 (sociale huurwoningen)**。
+    </p>
+    <p>
+      您也可以在 **自由市场 (vrije sector)** 租房，但租金通常较高。
+    </p>
+    <p>
+      如果想买房，许多人会向银行或保险公司申请 **按揭贷款 (hypotheek)**。
+    </p>
+  </ChineseColumn>
 
-      <h2>Belastingen en verzekeringen</h2>
-      <p>
-        Iedereen die in een huis woont, betaal je gemeentebelastingen, zoals <strong>afvalstoffenheffing</strong> (voor het ophalen van vuilnis) en <strong>rioolheffing</strong>.
-      </p>
-      <p>
-        Heb je een eigen huis? Dan betaal je ook <strong>onroerendezaakbelasting (OZB)</strong>.
-      </p>
-      <p>
-        Er zijn ook belangrijke verzekeringen:
-      </p>
-      <ul>
-        <li><strong>Opstalverzekering</strong>: verplicht bij een koophuis (voor schade aan het huis zelf, bijv. door brand).</li>
-        <li><strong>Inboedelverzekering</strong>: voor je spullen in huis (bijv. bij diefstal).</li>
-        <li><strong>Aansprakelijkheidsverzekering</strong>: betaalt als jij per ongeluk iets van iemand anders kapotmaakt.</li>
-      </ul>
-    </div>
+  {/* Section 2 */}
+  <DutchColumn title="2. Buren en Huisregels">
+    <p>
+      Nederlanders willen graag een gezellig huis met veel ruimte. U moet contact hebben met uw buren en hen helpen met kleine dingen.
+    </p>
+    <p>
+      Als u een feest geeft, moet u uw buren dit vertellen. U mag buren geen **geluidsoverlast** geven.
+    </p>
+    <p>
+      Als u last heeft van de buren, kunt u het beste eerst met hen praten.
+    </p>
+  </DutchColumn>
 
-    <div className="space-y-4">
-      <h2>租房与买房</h2>
-      <p>
-        在荷兰你可以租房或买房。<strong>社会住房（sociale huurwoningen）</strong>比较便宜，但通常有很长的<strong>等待期（wachttijd）</strong>。私人租房较贵，但能更快找到。
-      </p>
-      <p>
-        如果你买房，通常需要向银行借款，这叫<strong>按揭贷款（hypotheek）</strong>。你必须去<strong>公证处（notaris）</strong>正式签署购房合同。
-      </p>
+  <ChineseColumn title="2. 邻里与居住规则">
+    <p>
+      荷兰人喜欢舒适宽敞的家。您应该与邻居保持联系，并在小事上互相帮助。
+    </p>
+    <p>
+      如果您要举办派对，必须提前告知邻居。您不能给邻居造成 **噪音滋扰 (geluidsoverlast)**。
+    </p>
+    <p>
+      如果您被邻居吵到了，最好的解决办法是先直接跟他们沟通。
+    </p>
+  </ChineseColumn>
 
-      <h2>税收与保险</h2>
-      <p>
-        每个居住在房子里的人都要缴纳市政税，例如<strong>垃圾处理费（afvalstoffenheffing）</strong>和<strong>排污费（rioolheffing）</strong>。
-      </p>
-      <p>
-        如果你拥有自己的房子，还需要缴纳<strong>房产税（OZB）</strong>。
-      </p>
-      <p>
-        还有一些重要的保险：
-      </p>
-      <ul>
-        <li><strong>房屋险（Opstalverzekering）</strong>：买房时强制要求（涵盖房屋结构损坏，如火灾）。</li>
-        <li><strong>家庭财产险（Inboedelverzekering）</strong>：保屋内的个人物品（如被盗）。</li>
-        <li><strong>个人责任险（Aansprakelijkheidsverzekering）</strong>：如果你意外损坏了他人的物品，由保险公司赔付。</li>
-      </ul>
-    </div>
-  </div>
-
-  <div className="pt-4 border-t border-slate-100 text-sm text-slate-500 space-y-2">
-    <h3 className="font-semibold text-slate-700">延伸阅读 · Wikipedia</h3>
-    <ul className="list-disc list-inside space-y-1">
+  {/* Section 3 */}
+  <DutchColumn title="3. Afval Scheiden">
+    <p>
+      In Nederland moet u **afval scheiden**.
+    </p>
+    <ul>
       <li>
-        <a
-          href="https://en.wikipedia.org/wiki/Housing_in_the_Netherlands"
-          target="_blank"
-          rel="noreferrer"
-          className="text-blue-600 hover:underline"
-        >
-          Housing in the Netherlands – Wikipedia
-        </a>
+        **GFT** (**Groente, Fruit en Tuinafval**) moet in de groene container.
+      </li>
+      <li>
+        **Papier** wordt apart opgehaald.
+      </li>
+      <li>
+        Glazen flessen en potten gaan in de **glasbak**.
+      </li>
+      <li>
+        Batterijen en verf zijn **chemisch afval** en moeten in de **chemobox**.
+      </li>
+      <li>
+        Grote dingen (**Grofvuil**) moet u naar de **milieustraat** brengen of de gemeente bellen om het op te halen.
+      </li>
+      <li>
+        Als u het vuilnis op de verkeerde dag buiten zet, kunt u een **boete** krijgen.
       </li>
     </ul>
-  </div>
-</div>
+  </DutchColumn>
 
+  <ChineseColumn title="3. 垃圾分类">
+    <p>
+      在荷兰，您必须进行 **垃圾分类 (afval scheiden)**。
+    </p>
+    <ul>
+      <li>
+        **GFT**（**蔬菜、水果和花园垃圾**）必须扔进绿色垃圾桶。
+      </li>
+      <li>
+        **纸张 (Papier)** 会被单独回收。
+      </li>
+      <li>
+        玻璃瓶罐要扔进 **玻璃回收箱 (glasbak)**。
+      </li>
+      <li>
+        电池和油漆属于 **化学废物 (chemisch afval)**，必须放入专门的 **化学品箱 (chemobox)**。
+      </li>
+      <li>
+        大件物品（**大件垃圾 / Grofvuil**）必须送到 **垃圾回收站 (milieustraat)**，或者打电话给市政府预约上门回收。
+      </li>
+      <li>
+        如果您在错误的日子把垃圾拿出去，可能会面临 **罚款 (boete)**。
+      </li>
+    </ul>
+  </ChineseColumn>
+</BilingualGrid>
+
+<div className="mt-12 pt-8 border-t border-slate-100">
+  <h3 className="font-bold text-slate-900 mb-4 flex items-center gap-2">
+    <span className="text-xl">🔗</span> 延伸阅读 · 官方来源
+  </h3>
+  <ul className="space-y-3 list-none pl-0">
+    <li>
+      <SourceLink href="https://www.rijksoverheid.nl/onderwerpen/huurwoning">
+        Rijksoverheid: Huurwoning (关于租房的规定)
+      </SourceLink>
+    </li>
+    <li>
+      <SourceLink href="https://www.milieucentraal.nl/minder-afval/afval-scheiden/">
+        Milieu Centraal: Afval scheiden (垃圾分类指南)
+      </SourceLink>
+    </li>
+  </ul>
+</div>

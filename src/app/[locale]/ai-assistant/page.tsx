@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { Locale, uiTexts } from "@/lib/uiTexts";
+import { Locale, uiTexts, isLocale } from "@/lib/uiTexts";
+import { notFound } from "next/navigation";
 
 const NOTEBOOKLM_LINK =
   "https://notebooklm.google.com/notebook/315b620a-f043-4fe9-a424-4cf3e1d4ddaf";
@@ -10,6 +11,11 @@ export default async function AIAssistantPage({
   params: Promise<{ locale: Locale }>;
 }) {
   const { locale } = await params;
+
+  if (!isLocale(locale)) {
+    notFound();
+  }
+
   const { assistant } = uiTexts[locale];
 
   return (

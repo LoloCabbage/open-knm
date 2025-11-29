@@ -1,8 +1,14 @@
-import { Locale, uiTexts } from "@/lib/uiTexts";
+import { Locale, uiTexts, isLocale } from "@/lib/uiTexts";
 import Link from "next/link";
+import { notFound } from "next/navigation";
 
 export default async function HomePage({ params }: { params: Promise<{ locale: Locale }> }) {
   const { locale } = await params;
+
+  if (!isLocale(locale)) {
+    notFound();
+  }
+
   const isZh = locale === 'zh';
   const { assistant } = uiTexts[locale];
 

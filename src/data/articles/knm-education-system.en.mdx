@@ -1,114 +1,135 @@
-<div className="space-y-8">
-  <div className="text-sm text-slate-500 bg-slate-50 border border-slate-100 rounded-xl px-4 py-3 space-y-1">
-    <p className="font-medium">
-      This article explains the Dutch education tracks from <strong>primary school (basisschool)</strong> to
-      secondary (<strong>vmbo / havo / vwo</strong>) and further education (<strong>MBO / HBO / universiteit</strong>).
+import { ArticleSummary, BilingualGrid, DutchColumn, EnglishColumn, SourceLink } from '@/components/content/ArticleComponents';
+
+<ArticleSummary icon="🏫">
+  This article explains the Dutch education tracks from **primary school (basisschool)** to
+  secondary (**vmbo / havo / vwo**) and further education (**MBO / HBO / universiteit**).
+</ArticleSummary>
+
+<BilingualGrid>
+  {/* Section 1 */}
+  <DutchColumn title="1. Leerplicht en Basisschool">
+    <p>
+      Kinderen gaan meestal met 4 jaar naar de **basisschool** (Groep 1 t/m 8). De **leerplicht** begint op 5-jarige leeftijd en duurt tot 16 jaar.
     </p>
-  </div>
+    <p>
+      Kinderen van 16 en 17 jaar moeten naar school als ze nog geen diploma hebben.
+    </p>
+    <p>
+      De basisschool is gratis, maar ouders betalen vaak een vrijwillige **ouderbijdrage** voor activiteiten.
+    </p>
+    <p>
+      In Groep 8 van de basisschool doen veel kinderen de **Cito-toets**. De leraar geeft dan een **advies** voor het vervolgonderwijs.
+    </p>
+  </DutchColumn>
 
-  <div className="grid gap-8 md:grid-cols-2">
-    {/* Left: Dutch */}
-    <div className="space-y-4">
-      <h2>Basisschool en leerplicht</h2>
-      <p>
-        In Nederland gaan kinderen meestal vanaf 4 jaar naar de{" "}
-        <strong>basisschool</strong>. De <strong>leerplicht</strong> (verplichte schooltijd)
-        geldt vanaf 5 jaar tot minimaal 16 jaar.
-      </p>
-      <p>
-        Ouders zijn verantwoordelijk om ervoor te zorgen dat hun kinderen naar school gaan.
-        Zonder geldige reden mogen kinderen niet wegblijven.
-      </p>
+  <EnglishColumn title="1. Compulsory Education & Primary School">
+    <p>
+      Children usually start **primary school (basisschool)** at age 4 (Group 1 to 8). **Compulsory education (leerplicht)** starts at age 5 and continues until age 16.
+    </p>
+    <p>
+      Children aged 16 and 17 must still attend school if they do not yet have a diploma.
+    </p>
+    <p>
+      Primary school is free, but parents often pay a voluntary **parental contribution (ouderbijdrage)** for activities.
+    </p>
+    <p>
+      In Group 8 of primary school, many children take the **Cito-toets** (final test). The teacher then gives **advice (advies)** for secondary education.
+    </p>
+  </EnglishColumn>
 
-      <h2>Voortgezet onderwijs: vmbo, havo, vwo</h2>
-      <p>
-        Na de basisschool gaan kinderen naar het{" "}
-        <strong>voortgezet onderwijs</strong>. Er zijn drie hoofdrichtingen:{" "}
-        <strong>vmbo</strong>, <strong>havo</strong> en <strong>vwo</strong>.
-      </p>
-      <p>
-        <strong>vmbo</strong> is meer praktisch en bereidt voor op <strong>mbo</strong>.{" "}
-        <strong>havo</strong> is meer theoretisch en leidt vaak naar <strong>hbo</strong>.{" "}
-        <strong>vwo</strong> is het meest theoretisch en bereidt voor op de{" "}
-        <strong>universiteit</strong>.
-      </p>
-    </div>
-
-    {/* Right: English explanation */}
-    <div className="space-y-4">
-      <h2>From primary to secondary: the tracks</h2>
-      <p>
-        Children in the Netherlands usually start{" "}
-        <strong>primary school (basisschool)</strong> at the age of four. From the age of five
-        until at least sixteen they are under{" "}
-        <strong>compulsory education (leerplicht)</strong>, and parents must make sure they
-        attend school.
-      </p>
-      <p>
-        After primary school, pupils move into different secondary tracks:{" "}
-        <strong>vmbo</strong>, <strong>havo</strong> or <strong>vwo</strong>. These are very
-        common words in Dutch education and you will often hear them when people talk about
-        school levels.
-      </p>
-
-      <h2>VMBO / HAVO / VWO, MBO / HBO / university</h2>
-      <p>
-        <strong>VMBO</strong> is more practical and usually leads to{" "}
-        <strong>vocational education (MBO)</strong>. <strong>HAVO</strong> is more theoretical
-        and often leads to <strong>universities of applied sciences (HBO)</strong>.{" "}
-        <strong>VWO</strong> is the most academic track and prepares for{" "}
-        <strong>university (universiteit)</strong>.
-      </p>
-      <p>
-        These tracks are <strong>different ways and speeds of learning</strong>, not a value
-        judgment about people. Ideally, everyone finds the track that best fits their talents.
-      </p>
-
-      <h2>Why is this important for KNM?</h2>
-      <p>
-        In the KNM exam you will often see or hear terms like{" "}
-        <strong>basisschool, vmbo, havo, vwo, mbo, hbo</strong> and{" "}
-        <strong>universiteit</strong>. You do not need every detail, but you should know roughly
-        which level or phase they refer to and whether they are more practical or theoretical.
-      </p>
-    </div>
-  </div>
-
-  <div className="pt-4 border-t border-slate-100 text-sm text-slate-500 space-y-2">
-    <h3 className="font-semibold text-slate-700">Further reading on Wikipedia</h3>
-    <ul className="list-disc list-inside space-y-1">
+  {/* Section 2 */}
+  <DutchColumn title="2. Voortgezet Onderwijs (Middelbare School)">
+    <p>
+      Na de basisschool gaan kinderen naar het **voortgezet onderwijs**. Er zijn drie richtingen: **VMBO**, **HAVO**, en **VWO**.
+    </p>
+    <ul>
       <li>
-        <a
-          href="https://en.wikipedia.org/wiki/Education_in_the_Netherlands"
-          target="_blank"
-          rel="noreferrer"
-          className="text-blue-600 hover:underline"
-        >
-          Education in the Netherlands – Wikipedia
-        </a>
+        **VMBO** duurt 4 jaar. Dit is de meest **praktisch**e (beroeps) richting.
       </li>
       <li>
-        <a
-          href="https://en.wikipedia.org/wiki/Secondary_education_in_the_Netherlands"
-          target="_blank"
-          rel="noreferrer"
-          className="text-blue-600 hover:underline"
-        >
-          Secondary education in the Netherlands – Wikipedia
-        </a>
+        **HAVO** duurt 5 jaar.
       </li>
       <li>
-        <a
-          href="https://en.wikipedia.org/wiki/Universities_of_applied_sciences_in_the_Netherlands"
-          target="_blank"
-          rel="noreferrer"
-          className="text-blue-600 hover:underline"
-        >
-          Universities of applied sciences in the Netherlands – Wikipedia
-        </a>
+        **VWO** duurt 6 jaar. Dit is de meest **theoretisch**e richting.
       </li>
     </ul>
-  </div>
+  </DutchColumn>
+
+  <EnglishColumn title="2. Secondary Education (Voortgezet Onderwijs)">
+    <p>
+      After primary school, children go to **secondary education (voortgezet onderwijs)**. There are three main tracks: **VMBO**, **HAVO**, and **VWO**.
+    </p>
+    <ul>
+      <li>
+        **VMBO** takes 4 years. This is the most **practical** (vocational) track.
+      </li>
+      <li>
+        **HAVO** takes 5 years.
+      </li>
+      <li>
+        **VWO** takes 6 years. This is the most **theoretical** (academic) track.
+      </li>
+    </ul>
+  </EnglishColumn>
+
+  {/* Section 3 */}
+  <DutchColumn title="3. Vervolgstudies en Kosten">
+    <p>
+      Na het **VMBO** gaat men vaak naar het **MBO** (*Middelbaar Beroepsonderwijs*).
+    </p>
+    <p>
+      Na de **HAVO** kan men naar het **HBO** (*Hoger Beroeps Onderwijs*).
+    </p>
+    <p>
+      Na het **VWO** kan men naar de universiteit (WO) of het **HBO**.
+    </p>
+    <p>
+      Vanaf 18 jaar moeten studenten **lesgeld** betalen. Studenten kunnen bij **DUO** (*Dienst Uitvoering Onderwijs*) **studiefinanciering** aanvragen.
+    </p>
+    <p>
+      Met **studiefinanciering** krijgen zij ook een **OV-studentenkaart** om gratis met het openbaar vervoer te reizen.
+    </p>
+    <p>
+      Ouders met lage inkomens kunnen de **tegemoetkoming ouders** (subsidie voor schoolkosten) aanvragen bij **DUO**.
+    </p>
+  </DutchColumn>
+
+  <EnglishColumn title="3. Further Studies & Costs">
+    <p>
+      After **VMBO**, students often go to **MBO** (secondary vocational education).
+    </p>
+    <p>
+      After **HAVO**, students can go to **HBO** (university of applied sciences).
+    </p>
+    <p>
+      After **VWO**, students can go to university (WO) or **HBO**.
+    </p>
+    <p>
+      From age 18, students must pay **tuition fees (lesgeld)**. Students can apply for **student finance (studiefinanciering)** at **DUO**.
+    </p>
+    <p>
+      With **student finance**, they also get a **student travel product (OV-studentenkaart)** to travel for free on public transport.
+    </p>
+    <p>
+      Parents with low incomes can apply to **DUO** for the **parental allowance (tegemoetkoming ouders)** to help with school costs.
+    </p>
+  </EnglishColumn>
+</BilingualGrid>
+
+<div className="mt-12 pt-8 border-t border-slate-100">
+  <h3 className="font-bold text-slate-900 mb-4 flex items-center gap-2">
+    <span className="text-xl">🔗</span> Further Reading
+  </h3>
+  <ul className="space-y-3 list-none pl-0">
+    <li>
+      <SourceLink href="https://en.wikipedia.org/wiki/Education_in_the_Netherlands">
+        Education in the Netherlands – Wikipedia
+      </SourceLink>
+    </li>
+    <li>
+      <SourceLink href="https://www.duo.nl/particulier/international-student/">
+        DUO: Student finance for international students
+      </SourceLink>
+    </li>
+  </ul>
 </div>
-
-

@@ -1,8 +1,14 @@
-import { Locale } from "@/lib/i18n";
+import { Locale, isLocale } from "@/lib/uiTexts";
 import Link from "next/link";
+import { notFound } from "next/navigation";
 
 export default async function AboutPage({ params }: { params: Promise<{ locale: Locale }> }) {
   const { locale } = await params;
+  
+  if (!isLocale(locale)) {
+    notFound();
+  }
+
   const isZh = locale === "zh";
 
   // Replace this with your actual GitHub repository URL

@@ -1,112 +1,94 @@
-<div className="space-y-8">
-  <div className="text-sm text-slate-500 bg-slate-50 border border-slate-100 rounded-xl px-4 py-3 space-y-1">
-    <p className="font-medium">
-      本篇介绍荷兰常见的劳动合同类型（tijdelijk / vast / oproepcontract）、试用期
-      <strong>（proeftijd）</strong> 和基本的 <strong>解雇保护（ontslagbescherming）</strong>。
+import { ArticleSummary, BilingualGrid, DutchColumn, ChineseColumn, SourceLink } from '@/components/content/ArticleComponents';
+
+<ArticleSummary icon="💼">
+  本篇讲解在荷兰工作的核心规则：**工作合同 (contract)**、**试用期 (proeftijd)** 以及 **集体劳动协议 (CAO)**。
+</ArticleSummary>
+
+<BilingualGrid>
+  {/* Section 1 */}
+  <DutchColumn title="1. Contracten en Salaris">
+    <p>
+      Als u gaat werken, maakt u afspraken met uw werkgever. Deze afspraken staan in de **arbeidsovereenkomst**.
     </p>
-  </div>
+    <p>
+      Er zijn twee soorten contracten: **tijdelijk werk** (werk voor een korte tijd) en **vast werk** (werk voor onbepaalde tijd, een vaste baan).
+    </p>
+    <p>
+      In de **arbeidsovereenkomst** staan uw **salaris** en werktijden. U heeft altijd recht op het **minimumloon**.
+    </p>
+  </DutchColumn>
 
-  <div className="grid gap-8 md:grid-cols-2">
-    {/* 左列：荷兰语 */}
-    <div className="space-y-4">
-      <h2>Soorten arbeidsovereenkomsten</h2>
-      <p>
-        Een <strong>arbeidsovereenkomst</strong> is een{" "}
-        <strong>werkcontract</strong> tussen werkgever en werknemer. Belangrijke vormen zijn
-        het <strong>tijdelijk contract</strong>, het <strong>vast contract</strong> en het{" "}
-        <strong>oproepcontract</strong>.
-      </p>
-      <p>
-        Een <strong>tijdelijk contract</strong> heeft een einddatum. Een{" "}
-        <strong>vast contract</strong> heeft dat niet en biedt meestal meer{" "}
-        <strong>zekerheid</strong>. Bij een <strong>oproepcontract</strong> werk je alleen als
-        je wordt opgeroepen.
-      </p>
+  <ChineseColumn title="1. 合同与薪水">
+    <p>
+      当您开始工作时，您会与雇主达成协议。这些协议写在 **劳动合同 (arbeidsovereenkomst)** 中。
+    </p>
+    <p>
+      合同主要有两种：**临时合同 (tijdelijk werk)**（短期工作）和 **永久合同 (vast werk)**（无固定期限的长期工作）。
+    </p>
+    <p>
+      合同里会注明您的 **薪水 (salaris)** 和工作时间。您始终享有获得 **最低工资 (minimumloon)** 的权利。
+    </p>
+  </ChineseColumn>
 
-      <h2>Proeftijd en ontslagbescherming</h2>
-      <p>
-        In het begin van een contract kan er een <strong>proeftijd</strong> afgesproken worden.
-        In die periode kunnen beide partijen makkelijker het contract beëindigen.
-      </p>
-      <p>
-        Buiten de proeftijd is <strong>ontslagbescherming</strong> belangrijk. Een werkgever mag
-        een werknemer niet zomaar ontslaan; daar zijn <strong>regels</strong> en vaak{" "}
-        <strong>toestemming van een instantie</strong> voor nodig.
-      </p>
-    </div>
+  {/* Section 2 */}
+  <DutchColumn title="2. Proeftijd en Ontslag">
+    <p>
+      In de **arbeidsovereenkomst** staat een **proeftijd**. De **proeftijd** is maximaal 2 maanden.
+    </p>
+    <p>
+      Tijdens de **proeftijd** mag de werkgever u ontslaan, en u kunt zelf ook direct stoppen met het werk.
+    </p>
+    <p>
+      Als u **ontslag** neemt na de proeftijd, moet u dat lang van tevoren zeggen (*opzegtermijn*). Als u ontslag krijgt, gaat u naar het **UWV**.
+    </p>
+  </DutchColumn>
 
-    {/* 右列：中文解释 */}
-    <div className="space-y-4">
-      <h2>常见劳动合同类型</h2>
-      <p>
-        在荷兰，劳动合同叫作 <strong>arbeidsovereenkomst</strong>。最常见的几种是：
-        <strong>固定期限合同（tijdelijk contract）</strong>、
-        没有结束日期的 <strong>长期合同/正式合同（vast contract）</strong>，
-        以及根据用工需要才被叫来工作的 <strong>零工/待命合同（oproepcontract）</strong>。
-      </p>
-      <p>
-        一般来说，<strong>长期合同（vast）</strong> 比{" "}
-        <strong>临时合同（tijdelijk）</strong> 提供更多稳定性，比如解雇更困难、贷款更容易通过。
-        但法律也要求，即使是临时工和零工，也要遵守{" "}
-        <strong>最低工资（minimumloon）</strong> 和{" "}
-        <strong>加班/补贴规则（cao、arbeidsvoorwaarden）</strong>。
-      </p>
+  <ChineseColumn title="2. 试用期与解雇">
+    <p>
+      合同中通常包含一个 **试用期 (proeftijd)**。试用期最长为2个月。
+    </p>
+    <p>
+      在 **试用期** 期间，雇主可以随时解雇您，您也可以随时辞职，不需要理由。
+    </p>
+    <p>
+      如果在试用期之后您想 **辞职 (ontslag nemen)**，必须提前告知（这叫 *通知期 opzegtermijn*）。如果您被解雇了，通常需要去 **UWV**（劳工局）登记。
+    </p>
+  </ChineseColumn>
 
-      <h2>试用期和解雇保护</h2>
-      <p>
-        很多合同在开头会约定 <strong>试用期（proeftijd）</strong>。
-        在这段短时间内，雇主和员工都可以比较容易地结束合同，用来“互相试一试”是否合适。
-      </p>
-      <p>
-        试用期过后，荷兰法律提供一定的{" "}
-        <strong>解雇保护（ontslagbescherming）</strong>：
-        雇主不能随便说“明天不用来了”，通常需要有合理理由，并且要通过机构或法院审批。
-      </p>
+  {/* Section 3 */}
+  <DutchColumn title="3. CAO en Zwartwerk">
+    <p>
+      Een **CAO** (*Collectieve Arbeidsovereenkomst*) is een lijst met afspraken voor alle werknemers in één sector. De **CAO** gaat bijvoorbeeld over salarissen en vakantiedagen.
+    </p>
+    <p>
+      **Zwart werken** is **verboden**. Bij **zwart werken** betaalt de werkgever geen premies en belasting, en u krijgt geen geld bij ziekte.
+    </p>
+  </DutchColumn>
 
-      <h2>为什么这对 KNM 考试很重要？</h2>
-      <p>
-        在 KNM 考试中，如果看到{" "}
-        <strong>tijdelijk contract / vast contract / oproepcontract / proeftijd</strong>{" "}
-        等词，你要能判断大概是关于“合同期限”和“工作稳定性”的问题，而不是完全陌生。
-      </p>
-    </div>
-  </div>
+  <ChineseColumn title="3. CAO 与打黑工">
+    <p>
+      **CAO**（*集体劳动协议*）是一份适用于某个行业所有员工的协议清单。**CAO** 规定了薪资标准、假期天数等。
+    </p>
+    <p>
+      **打黑工 (zwart werken)** 是 **被禁止的 (verboden)**。打黑工意味着雇主不缴纳保险和税款，如果您生病了，也拿不到工资（病假工资）。
+    </p>
+  </ChineseColumn>
+</BilingualGrid>
 
-  <div className="pt-4 border-t border-slate-100 text-sm text-slate-500 space-y-2">
-    <h3 className="font-semibold text-slate-700">延伸阅读 · Wikipedia</h3>
-    <ul className="list-disc list-inside space-y-1">
-      <li>
-        <a
-          href="https://en.wikipedia.org/wiki/Labour_law#Labour_law_in_individual_countries"
-          target="_blank"
-          rel="noreferrer"
-          className="text-blue-600 hover:underline"
-        >
-          Labour law – overview and Dutch section – Wikipedia
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://en.wikipedia.org/wiki/Employment_contract"
-          target="_blank"
-          rel="noreferrer"
-          className="text-blue-600 hover:underline"
-        >
-          Employment contract – Wikipedia
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://en.wikipedia.org/wiki/Probation_(workplace)"
-          target="_blank"
-          rel="noreferrer"
-          className="text-blue-600 hover:underline"
-        >
-          Probation (workplace) – Wikipedia
-        </a>
-      </li>
-    </ul>
-  </div>
+<div className="mt-12 pt-8 border-t border-slate-100">
+  <h3 className="font-bold text-slate-900 mb-4 flex items-center gap-2">
+    <span className="text-xl">🔗</span> 延伸阅读 · 官方来源
+  </h3>
+  <ul className="space-y-3 list-none pl-0">
+    <li>
+      <SourceLink href="https://www.rijksoverheid.nl/onderwerpen/arbeidsovereenkomst-en-cao">
+        Rijksoverheid: Arbeidsovereenkomst en CAO
+      </SourceLink>
+    </li>
+    <li>
+      <SourceLink href="https://www.rijksoverheid.nl/onderwerpen/ontslag">
+        Rijksoverheid: Ontslag (关于解雇的规定)
+      </SourceLink>
+    </li>
+  </ul>
 </div>
-
-

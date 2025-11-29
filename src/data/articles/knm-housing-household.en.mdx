@@ -1,78 +1,128 @@
-<div className="space-y-8">
-  <div className="text-sm text-slate-500 bg-slate-50 border border-slate-100 rounded-xl px-4 py-3 space-y-1">
-    <p className="font-medium">
-      This article explains housing in the Netherlands: <strong>renting vs buying (huren/kopen)</strong>, and the necessary <strong>taxes (belastingen)</strong> and <strong>insurances (verzekeringen)</strong>.
+import { ArticleSummary, BilingualGrid, DutchColumn, EnglishColumn, SourceLink } from '@/components/content/ArticleComponents';
+
+<ArticleSummary icon="🏠">
+  This article explains living in the Netherlands: **renting vs buying (Huren en Kopen)**, **neighborly rules (Buren)**, and strict **waste separation (Afval scheiden)**.
+</ArticleSummary>
+
+<BilingualGrid>
+  {/* Section 1 */}
+  <DutchColumn title="1. Huren of Kopen">
+    <p>
+      Een huis huren kan via een woningcorporatie (**woningbouwvereniging**). Dit zijn vaak **sociale huurwoningen** met een lage huur.
     </p>
-  </div>
+    <p>
+      U kunt ook een huis huren in de **vrije sector**, maar de huur is dan vaak hoog.
+    </p>
+    <p>
+      Om een huis te kopen, vragen veel mensen een **hypotheek** aan bij een bank of verzekeringsmaatschappij.
+    </p>
+  </DutchColumn>
 
-  <div className="grid gap-8 md:grid-cols-2">
-    <div className="space-y-4">
-      <h2>Huren en kopen</h2>
-      <p>
-        Je kunt in Nederland een woning huren of kopen. <strong>Sociale huurwoningen</strong> zijn goedkoper, maar er is vaak een lange <strong>wachttijd</strong>. Particuliere huur is duurder, maar sneller beschikbaar.
-      </p>
-      <p>
-        Als je een huis koopt, leen je meestal geld bij de bank. Dit heet een <strong>hypotheek</strong>. Je moet naar de <strong>notaris</strong> om het koopcontract officieel te maken.
-      </p>
+  <EnglishColumn title="1. Renting or Buying">
+    <p>
+      You can rent a house through a housing association (**woningbouwvereniging**). These are often **social housing (sociale huurwoningen)** with low rent.
+    </p>
+    <p>
+      You can also rent a house in the **private sector (vrije sector)**, but the rent is often high.
+    </p>
+    <p>
+      To buy a house, many people apply for a **mortgage (hypotheek)** at a bank or insurance company.
+    </p>
+  </EnglishColumn>
 
-      <h2>Belastingen en verzekeringen</h2>
-      <p>
-        Iedereen die in een huis woont, betaalt gemeentebelastingen, zoals <strong>afvalstoffenheffing</strong> (voor het ophalen van vuilnis) en <strong>rioolheffing</strong>.
-      </p>
-      <p>
-        Heb je een eigen huis? Dan betaal je ook <strong>onroerendezaakbelasting (OZB)</strong>.
-      </p>
-      <p>
-        Er zijn ook belangrijke verzekeringen:
-      </p>
-      <ul>
-        <li><strong>Opstalverzekering</strong>: verplicht bij een koophuis (voor schade aan het huis zelf, bijv. door brand).</li>
-        <li><strong>Inboedelverzekering</strong>: voor je spullen in huis (bijv. bij diefstal).</li>
-        <li><strong>Aansprakelijkheidsverzekering</strong>: betaalt als jij per ongeluk iets van iemand anders kapotmaakt.</li>
-      </ul>
-    </div>
+  {/* Section 2 */}
+  <DutchColumn title="2. Buren en Huisregels">
+    <p>
+      Nederlanders willen graag een gezellig huis met veel ruimte. U moet contact hebben met uw buren en hen helpen met kleine dingen.
+    </p>
+    <p>
+      Als u een feest geeft, moet u uw buren dit vertellen. U mag buren geen **geluidsoverlast** geven.
+    </p>
+    <p>
+      Als u last heeft van de buren, kunt u het beste eerst met hen praten.
+    </p>
+  </DutchColumn>
 
-    <div className="space-y-4">
-      <h2>Renting and buying</h2>
-      <p>
-        You can rent or buy a home in the Netherlands. <strong>Social housing (sociale huurwoningen)</strong> is cheaper, but there is often a long <strong>waiting list (wachttijd)</strong>. Private rental is more expensive but available faster.
-      </p>
-      <p>
-        If you buy a house, you usually borrow money from the bank. This is called a <strong>mortgage (hypotheek)</strong>. You must go to the <strong>notary (notaris)</strong> to make the purchase contract official.
-      </p>
+  <EnglishColumn title="2. Neighbors and House Rules">
+    <p>
+      Dutch people like to have a cozy house with plenty of space. You should have contact with your neighbors and help them with small things.
+    </p>
+    <p>
+      If you have a party, you must tell your neighbors. You may not cause **noise nuisance (geluidsoverlast)** for neighbors.
+    </p>
+    <p>
+      If you are bothered by neighbors, it is best to talk to them first.
+    </p>
+  </EnglishColumn>
 
-      <h2>Taxes and insurances</h2>
-      <p>
-        Everyone living in a house pays municipal taxes, such as <strong>waste collection levy (afvalstoffenheffing)</strong> and <strong>sewage levy (rioolheffing)</strong>.
-      </p>
-      <p>
-        Do you own a house? Then you also pay <strong>property tax (OZB)</strong>.
-      </p>
-      <p>
-        There are also important insurances:
-      </p>
-      <ul>
-        <li><strong>Building insurance (Opstalverzekering)</strong>: mandatory for a bought house (covers damage to the structure, e.g., fire).</li>
-        <li><strong>Contents insurance (Inboedelverzekering)</strong>: for your belongings inside the house (e.g., theft).</li>
-        <li><strong>Liability insurance (Aansprakelijkheidsverzekering)</strong>: pays if you accidentally break something belonging to someone else.</li>
-      </ul>
-    </div>
-  </div>
-
-  <div className="pt-4 border-t border-slate-100 text-sm text-slate-500 space-y-2">
-    <h3 className="font-semibold text-slate-700">Further reading on Wikipedia</h3>
-    <ul className="list-disc list-inside space-y-1">
+  {/* Section 3 */}
+  <DutchColumn title="3. Afval Scheiden">
+    <p>
+      In Nederland moet u **afval scheiden**.
+    </p>
+    <ul>
       <li>
-        <a
-          href="https://en.wikipedia.org/wiki/Housing_in_the_Netherlands"
-          target="_blank"
-          rel="noreferrer"
-          className="text-blue-600 hover:underline"
-        >
-          Housing in the Netherlands – Wikipedia
-        </a>
+        **GFT** (**Groente, Fruit en Tuinafval**) moet in de groene container.
+      </li>
+      <li>
+        **Papier** wordt apart opgehaald.
+      </li>
+      <li>
+        Glazen flessen en potten gaan in de **glasbak**.
+      </li>
+      <li>
+        Batterijen en verf zijn **chemisch afval** en moeten in de **chemobox**.
+      </li>
+      <li>
+        Grote dingen (**Grofvuil**) moet u naar de **milieustraat** brengen of de gemeente bellen om het op te halen.
+      </li>
+      <li>
+        Als u het vuilnis op de verkeerde dag buiten zet, kunt u een **boete** krijgen.
       </li>
     </ul>
-  </div>
-</div>
+  </DutchColumn>
 
+  <EnglishColumn title="3. Waste Separation">
+    <p>
+      In the Netherlands, you must **separate waste (afval scheiden)**.
+    </p>
+    <ul>
+      <li>
+        **GFT** (**Vegetable, Fruit and Garden waste**) must go in the green bin.
+      </li>
+      <li>
+        **Paper (Papier)** is collected separately.
+      </li>
+      <li>
+        Glass bottles and jars go in the **glass bank (glasbak)**.
+      </li>
+      <li>
+        Batteries and paint are **chemical waste (chemisch afval)** and must go in the **chemobox**.
+      </li>
+      <li>
+        Large items (**Bulky waste / Grofvuil**) must be taken to the **recycling center (milieustraat)** or you must call the municipality to pick them up.
+      </li>
+      <li>
+        If you put the garbage out on the wrong day, you can get a **fine (boete)**.
+      </li>
+    </ul>
+  </EnglishColumn>
+</BilingualGrid>
+
+<div className="mt-12 pt-8 border-t border-slate-100">
+  <h3 className="font-bold text-slate-900 mb-4 flex items-center gap-2">
+    <span className="text-xl">🔗</span> Further Reading
+  </h3>
+  <ul className="space-y-3 list-none pl-0">
+    <li>
+      <SourceLink href="https://en.wikipedia.org/wiki/Housing_in_the_Netherlands">
+        Housing in the Netherlands – Wikipedia
+      </SourceLink>
+    </li>
+    <li>
+      <SourceLink href="https://www.government.nl/topics/housing">
+        Government.nl: Housing
+      </SourceLink>
+    </li>
+  </ul>
+</div>

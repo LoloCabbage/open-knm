@@ -1,76 +1,72 @@
-<div className="space-y-8">
-  <div className="text-sm text-slate-500 bg-slate-50 border border-slate-100 rounded-xl px-4 py-3 space-y-1">
-    <p className="font-medium">
-      荷兰的环境保护非常严格。本篇介绍如何正确进行<strong>垃圾分类（afval scheiden）</strong>，以及如果不遵守规则可能面临的<strong>罚款（boete）</strong>。
+import { ArticleSummary, BilingualGrid, DutchColumn, ChineseColumn, SourceLink } from '@/components/content/ArticleComponents';
+
+<ArticleSummary icon="♻️">
+  荷兰的环境保护非常严格。本篇介绍如何正确进行 **垃圾分类 (afval scheiden)**，以及如果不遵守规则可能面临的 **罚款 (boete)**。
+</ArticleSummary>
+
+<BilingualGrid>
+  {/* Section 1 */}
+  <DutchColumn title="1. Afval scheiden">
+    <p>
+      In Nederland moet je je **afval scheiden**. Dit is beter voor het milieu omdat veel materiaal hergebruikt kan worden.
     </p>
-  </div>
-
-  <div className="grid gap-8 md:grid-cols-2">
-    <div className="space-y-4">
-      <h2>Afval scheiden</h2>
-      <p>
-        In Nederland moet je je <strong>afval scheiden</strong>. Dit is beter voor het milieu omdat veel materiaal hergebruikt kan worden.
-      </p>
-      <p>
-        Er zijn verschillende soorten afval:
-      </p>
-      <ul>
-        <li><strong>GFT</strong> (Groente-, Fruit- en Tuinafval): dit gaat in de groene bak.</li>
-        <li><strong>Papier</strong> en karton: dit gaat in de papierbak.</li>
-        <li><strong>Glas</strong>: dit breng je naar de glasbak.</li>
-        <li><strong>Chemisch afval</strong> (zoals batterijen, verf en medicijnen): dit lever je apart in bij een inleverpunt of de milieustraat.</li>
-        <li><strong>Restafval</strong>: alles wat overblijft, gaat in de grijze bak.</li>
-      </ul>
-
-      <h2>Regels en boetes</h2>
-      <p>
-        Elke gemeente heeft eigen regels. Op de <strong>afvalkalender</strong> kun je zien op welke dag het vuilnis wordt opgehaald.
-      </p>
-      <p>
-        Zet je het vuilnis op de verkeerde dag buiten of scheid je het niet goed? Dan kun je een <strong>boete</strong> krijgen van de gemeente.
-      </p>
-    </div>
-
-    <div className="space-y-4">
-      <h2>垃圾分类</h2>
-      <p>
-        在荷兰，你必须进行<strong>垃圾分类（afval scheiden）</strong>。这对环境更好，因为许多材料可以回收利用。
-      </p>
-      <p>
-        垃圾有几种不同类型：
-      </p>
-      <ul>
-        <li><strong>GFT</strong>（蔬菜、水果和花园垃圾）：放入绿色垃圾桶。</li>
-        <li><strong>纸张（Papier）</strong>和纸板：放入纸张回收桶。</li>
-        <li><strong>玻璃（Glas）</strong>：送到玻璃回收箱。</li>
-        <li><strong>化学垃圾（Chemisch afval）</strong>（如电池、油漆和药品）：需单独送到回收点或环保站。</li>
-        <li><strong>剩余垃圾（Restafval）</strong>：所有剩下的东西放入灰色垃圾桶。</li>
-      </ul>
-
-      <h2>规则与罚款</h2>
-      <p>
-        每个市政府都有自己的规定。你可以在<strong>垃圾日历（afvalkalender）</strong>上查看哪一天收垃圾。
-      </p>
-      <p>
-        如果你在错误的日子把垃圾拿出来，或者没有正确分类，你可能会收到市政府的<strong>罚款（boete）</strong>。
-      </p>
-    </div>
-  </div>
-
-  <div className="pt-4 border-t border-slate-100 text-sm text-slate-500 space-y-2">
-    <h3 className="font-semibold text-slate-700">延伸阅读 · Wikipedia</h3>
-    <ul className="list-disc list-inside space-y-1">
-      <li>
-        <a
-          href="https://en.wikipedia.org/wiki/Waste_management_in_the_Netherlands"
-          target="_blank"
-          rel="noreferrer"
-          className="text-blue-600 hover:underline"
-        >
-          Waste management in the Netherlands – Wikipedia
-        </a>
-      </li>
+    <p>
+      Er zijn verschillende soorten afval:
+    </p>
+    <ul>
+      <li>**GFT** (Groente-, Fruit- en Tuinafval): dit gaat in de groene bak.</li>
+      <li>**Papier** en karton: dit gaat in de papierbak.</li>
+      <li>**Glas**: dit breng je naar de glasbak.</li>
+      <li>**Chemisch afval** (zoals batterijen, verf en medicijnen): dit lever je apart in bij een inleverpunt of de milieustraat.</li>
+      <li>**Restafval**: alles wat overblijft, gaat in de grijze bak.</li>
     </ul>
-  </div>
-</div>
+  </DutchColumn>
 
+  <ChineseColumn title="1. 垃圾分类">
+    <p>
+      在荷兰，你必须进行 **垃圾分类 (afval scheiden)**。这对环境更好，因为许多材料可以回收利用。
+    </p>
+    <p>
+      垃圾有几种不同类型：
+    </p>
+    <ul>
+      <li>**GFT**（蔬菜、水果和花园垃圾）：放入绿色垃圾桶。</li>
+      <li>**纸张 (Papier)** 和纸板：放入纸张回收桶。</li>
+      <li>**玻璃 (Glas)**：送到玻璃回收箱。</li>
+      <li>**化学垃圾 (Chemisch afval)**（如电池、油漆和药品）：需单独送到回收点或环保站。</li>
+      <li>**剩余垃圾 (Restafval)**：所有剩下的东西放入灰色垃圾桶。</li>
+    </ul>
+  </ChineseColumn>
+
+  {/* Section 2 */}
+  <DutchColumn title="2. Regels en boetes">
+    <p>
+      Elke gemeente heeft eigen regels. Op de **afvalkalender** kun je zien op welke dag het vuilnis wordt opgehaald.
+    </p>
+    <p>
+      Zet je het vuilnis op de verkeerde dag buiten of scheid je het niet goed? Dan kun je een **boete** krijgen van de gemeente.
+    </p>
+  </DutchColumn>
+
+  <ChineseColumn title="2. 规则与罚款">
+    <p>
+      每个市政府都有自己的规定。你可以在 **垃圾日历 (afvalkalender)** 上查看哪一天收垃圾。
+    </p>
+    <p>
+      如果你在错误的日子把垃圾拿出来，或者没有正确分类，你可能会收到市政府的 **罚款 (boete)**。
+    </p>
+  </ChineseColumn>
+</BilingualGrid>
+
+<div className="mt-12 pt-8 border-t border-slate-100">
+  <h3 className="font-bold text-slate-900 mb-4 flex items-center gap-2">
+    <span className="text-xl">🔗</span> 延伸阅读 · 官方来源
+  </h3>
+  <ul className="space-y-3 list-none pl-0">
+    <li>
+      <SourceLink href="https://en.wikipedia.org/wiki/Waste_management_in_the_Netherlands">
+        Waste management in the Netherlands – Wikipedia
+      </SourceLink>
+    </li>
+  </ul>
+</div>

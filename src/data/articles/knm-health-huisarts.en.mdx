@@ -1,103 +1,125 @@
-<div className="space-y-8">
-  <div className="text-sm text-slate-500 bg-slate-50 border border-slate-100 rounded-xl px-4 py-3 space-y-1">
-    <p className="font-medium">
-      This article explains the central role of the <strong>GP (huisarts)</strong> in Dutch healthcare,
-      and the basics of <strong>referrals (verwijzing)</strong>, the{" "}
-      <strong>out‑of‑hours GP service (huisartsenpost)</strong> and the emergency number <strong>112</strong>.
+import { ArticleSummary, BilingualGrid, DutchColumn, EnglishColumn, SourceLink } from '@/components/content/ArticleComponents';
+
+<ArticleSummary icon="🏥">
+  In the Netherlands, the first step for medical care is always the **general practitioner (huisarts)**. This guide explains registration, referrals, and emergencies.
+</ArticleSummary>
+
+<BilingualGrid>
+  {/* Section 1 */}
+  <DutchColumn title="1. De huisarts en inschrijven">
+    <p>
+      De **huisarts** is het belangrijkste contactpunt voor uw gezondheid. U moet zich inschrijven bij een **huisarts** in uw woonbuurt.
     </p>
-  </div>
+    <p>
+      Bij ziekte, pijn of psychische problemen gaat u altijd eerst naar de **huisarts**.
+    </p>
+    <p>
+      U moet een **afspraak** maken voordat u naar de praktijk gaat. U meldt de naam van uw **huisarts** bij uw zorgverzekeraar.
+    </p>
+  </DutchColumn>
 
-  <div className="grid gap-8 md:grid-cols-2">
-    {/* Left: Dutch */}
-    <div className="space-y-4">
-      <h2>De rol van de huisarts</h2>
-      <p>
-        In Nederland is de <strong>huisarts</strong> meestal je eerste aanspreekpunt bij
-        gezondheidsklachten. De huisarts kent jouw medische geschiedenis en beoordeelt of
-        verdere zorg nodig is.
-      </p>
-      <p>
-        Zonder <strong>verwijzing</strong> van de huisarts kun je vaak niet zomaar naar een{" "}
-        <strong>specialist in het ziekenhuis</strong>. De huisarts is daarmee een soort{" "}
-        <strong>poortwachter van de zorg</strong>.
-      </p>
+  <EnglishColumn title="1. The GP and Registration">
+    <p>
+      The **general practitioner (huisarts)** is the most important contact point for your health. You must register with a **huisarts** in your neighborhood.
+    </p>
+    <p>
+      Whether you have illness, pain, or psychological problems, you always go to the **huisarts** first.
+    </p>
+    <p>
+      You must make an **appointment (afspraak)** before going to the practice. You must also report the name of your **huisarts** to your health insurer.
+    </p>
+  </EnglishColumn>
 
-      <h2>Avond, nacht en spoed</h2>
-      <p>
-        Buiten kantoortijden kun je bij ernstige klachten contact opnemen met de{" "}
-        <strong>huisartsenpost</strong>. Bij levensgevaar bel je altijd <strong>112</strong> voor{" "}
-        <strong>ambulance, brandweer of politie</strong>.
-      </p>
-    </div>
+  {/* Section 2 */}
+  <DutchColumn title="2. Verwijsbrief en specialist">
+    <p>
+      Als de **huisarts** denkt dat u specialistische hulp nodig heeft, stuurt hij u door.
+    </p>
+    <p>
+      U krijgt dan een **verwijsbrief** mee voor de **specialist** in het ziekenhuis.
+    </p>
+    <p>
+      Zonder deze **verwijsbrief** kunt u geen afspraak maken bij de **specialist**.
+    </p>
+  </DutchColumn>
 
-    {/* Right: English explanation */}
-    <div className="space-y-4">
-      <h2>The GP (huisarts) as your starting point</h2>
-      <p>
-        In the Netherlands you usually first make an appointment with your{" "}
-        <strong>general practitioner (huisarts)</strong> when you have health complaints. The GP
-        knows your medical history and decides whether you need medication, tests or a{" "}
-        <strong>specialist (specialist)</strong> in a hospital.
-      </p>
-      <p>
-        Without a <strong>referral (verwijzing)</strong> you usually cannot make an appointment
-        with a specialist. The GP acts as a <strong>gatekeeper of care (poortwachter van de zorg)</strong>,
-        helping to use medical resources efficiently and keeping an overview of your health.
-      </p>
+  <EnglishColumn title="2. Referral Letter and Specialist">
+    <p>
+      If the **huisarts** thinks you need specialized help, they will refer you.
+    </p>
+    <p>
+      You will then receive a **referral letter (verwijsbrief)** for the **specialist** at the hospital.
+    </p>
+    <p>
+      Without this **referral letter**, you cannot make an appointment with a **specialist**.
+    </p>
+  </EnglishColumn>
 
-      <h2>Out‑of‑hours and emergencies</h2>
-      <p>
-        In the evening, at weekends or on holidays you can contact the{" "}
-        <strong>out‑of‑hours GP service (huisartsenpost)</strong> for serious but non‑life‑threatening
-        problems. For <strong>life‑threatening emergencies</strong> such as severe breathing problems
-        or unconsciousness you call <strong>112</strong> for an ambulance, fire brigade or police.
-      </p>
+  {/* Section 3 */}
+  <DutchColumn title="3. Spoed en huisartsenpost">
+    <p>
+      Voor levensbedreigende noodgevallen belt u direct **112**.
+    </p>
+    <p>
+      Als u 's avonds of in het weekend met spoed een dokter nodig heeft, maar niet tot de volgende werkdag kunt wachten, belt u de **huisartsenpost**.
+    </p>
+    <p>
+      De **huisartsenpost** is alleen voor dringende zaken.
+    </p>
+  </DutchColumn>
 
-      <h2>Why is this important for KNM?</h2>
-      <p>
-        In KNM questions involving healthcare, if you see or hear{" "}
-        <strong>huisarts</strong>, <strong>verwijzing</strong>,{" "}
-        <strong>huisartsenpost</strong> or <strong>112</strong>, you should know which service
-        to contact first and in what kind of situation.
-      </p>
-    </div>
-  </div>
+  <EnglishColumn title="3. Emergencies and Out-of-hours">
+    <p>
+      For life-threatening emergencies, call **112** immediately.
+    </p>
+    <p>
+      If you need a doctor urgently in the evening or on the weekend, but cannot wait until the next working day, call the **huisartsenpost** (out-of-hours GP post).
+    </p>
+    <p>
+      The **huisartsenpost** is only for urgent matters.
+    </p>
+  </EnglishColumn>
 
-  <div className="pt-4 border-t border-slate-100 text-sm text-slate-500 space-y-2">
-    <h3 className="font-semibold text-slate-700">Further reading on Wikipedia</h3>
-    <ul className="list-disc list-inside space-y-1">
-      <li>
-        <a
-          href="https://en.wikipedia.org/wiki/General_practitioner"
-          target="_blank"
-          rel="noreferrer"
-          className="text-blue-600 hover:underline"
-        >
-          General practitioner – Wikipedia
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://en.wikipedia.org/wiki/Healthcare_in_the_Netherlands"
-          target="_blank"
-          rel="noreferrer"
-          className="text-blue-600 hover:underline"
-        >
-          Healthcare in the Netherlands – Wikipedia
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://en.wikipedia.org/wiki/112_(emergency_telephone_number)"
-          target="_blank"
-          rel="noreferrer"
-          className="text-blue-600 hover:underline"
-        >
-          112 (emergency telephone number) – Wikipedia
-        </a>
-      </li>
-    </ul>
-  </div>
+  {/* Section 4 */}
+  <DutchColumn title="4. Apotheek en kosten">
+    <p>
+      U haalt uw medicijnen bij de **apotheek**. Soms kunt u medicijnen kopen zonder **recept**. Voor andere medicijnen heeft u een **recept** van de arts nodig.
+    </p>
+    <p>
+      Uw basisverzekering betaalt de kosten van de **huisarts**.
+    </p>
+    <p>
+      U betaalt een **eigen risico** voor veel zorgkosten, maar niet voor het bezoek aan de **huisarts**.
+    </p>
+  </DutchColumn>
+
+  <EnglishColumn title="4. Pharmacy and Costs">
+    <p>
+      You pick up your medicines at the **pharmacy (apotheek)**. Sometimes you can buy medicines without a **prescription (recept)**. For other medicines, you need a **prescription** from the doctor.
+    </p>
+    <p>
+      Your basic insurance pays for the costs of the **huisarts**.
+    </p>
+    <p>
+      You pay a **deductible / own risk (eigen risico)** for many healthcare costs, but NOT for visiting the **huisarts** (it is free of deductible).
+    </p>
+  </EnglishColumn>
+</BilingualGrid>
+
+<div className="mt-12 pt-8 border-t border-slate-100">
+  <h3 className="font-bold text-slate-900 mb-4 flex items-center gap-2">
+    <span className="text-xl">🔗</span> Further Reading
+  </h3>
+  <ul className="space-y-3 list-none pl-0">
+    <li>
+      <SourceLink href="https://en.wikipedia.org/wiki/Healthcare_in_the_Netherlands">
+        Healthcare in the Netherlands – Wikipedia
+      </SourceLink>
+    </li>
+    <li>
+      <SourceLink href="https://www.government.nl/topics/health-insurance">
+        Government.nl: Health insurance
+      </SourceLink>
+    </li>
+  </ul>
 </div>
-
-
